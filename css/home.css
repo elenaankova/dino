@@ -6,6 +6,10 @@
   font-family: "Rounded Mplus 1c";
   src: url("../fonts/MPLUSRounded1c-Regular.ttf");
 }
+@font-face {
+  font-family: "Rounded Mplus 1c Light";
+  src: url("../fonts/MPLUSRounded1c-Light.ttf");
+}
 html {
   overflow-x: hidden;
 }
@@ -36,10 +40,14 @@ input[type='checkbox'] {
   /* Светлая тема (по умолчанию) */
   --fon: #FAFFFB;
   --text-color: #12321A;
-  --header-bg: #fff;
-  --card-bg: #fff;
-  --button-bg: #d587af;
-  --button-text: #fff;
+  /* --header-bg: #fff; */
+  /* --card-bg: #fff; */
+  --button-bg: #6A9929;
+  --button-text: #FAFFFB;
+  --button-bg-active: #A0B297;
+  --border-color-active: #A0B297;
+  
+
   --border-color: #410e28;
   --chekbox: #EDC6D1;
 }
@@ -58,7 +66,7 @@ input[type='checkbox'] {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
-  gap: 150px;
+  gap: 90px;
   align-items: center;
   padding: 0 20px;
 }
@@ -107,12 +115,38 @@ input[type='checkbox'] {
 
 /*                banner             */
 .banner{
-  display: flex;
-  justify-content: space-between;
+  height: 800px;
+  /* margin-bottom: 120px; */
 }
-
+.banner_content{
+  top: 260px;
+  position: absolute;
+  max-width: 660px;
+  font-family: "Rounded Mplus 1c Light";
+}
+.banner_content_text{
+  font-size: 2.8vw;
+  font-weight: 100;
+  margin: 0 0 15px 0;
+}
+.banner_content_tagline{
+  font-size: 25px;
+  font-weight: 100;
+  margin: 0 0 100px 0;
+}
+.banner_content_btn{
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  width: 280px;
+  height: 50px;
+  font-size: 22px;
+  font-family: "Rounded Mplus 1c Light";
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
 .banner_image{
-  max-width: 900px;
+  max-width: 780px;
   position: absolute;
   top: 0; 
   right: 0;
@@ -123,3 +157,117 @@ input[type='checkbox'] {
 }
 
 /*                banner             */
+
+/*                application             */
+.application{
+  max-width: 100%;
+  margin-bottom: 190px;
+}
+.appli_title{
+  font-size: 70px;
+  font-weight: normal;
+  font-family: "Brusnika";
+  margin: 0 0 30px 0;
+}
+.appli_content{
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  column-gap: 90px;
+  row-gap: 15px;
+}
+.appli_content_paragraph{
+  display: flex;      
+  align-items: center; 
+  /* align-items: baseline;  */ /* Выравнивание по базовой линии текста */
+  gap: 40px;
+  font-size: 4.0vw;
+  font-weight: 100;
+}
+.appli_content_paragraph p{
+  font-size: 22px;
+}
+/*                application             */
+
+/*                levels             */
+.levels{
+  max-width: 100%;
+  margin-bottom: 190px;
+}
+.levels_title{
+  font-size: 70px;
+  font-weight: normal;
+  font-family: "Brusnika";
+  margin: 0 0 40px 0;
+}
+.levels_buttons{
+  width: 100%;
+  display: flex;
+  gap: 45px;
+  margin-bottom: 90px;
+}
+.levels_btn{
+  background-color: var(--button-bg-active);
+  color: var(--button-text);
+  width: 325px;
+  height: 50px;
+  font-size: 22px;
+  font-family: "Rounded Mplus 1c Light";
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.levels_btn:hover{
+  /* box-shadow: 0 0 0 5px var(--fon),
+              0 0 0 7px var(--border-color-active);   */
+  /* transform: scale(1.02); */
+  border-radius: 10px;
+  outline: 3px dashed var(--border-color-active); 
+  outline-offset: 6px;            
+}
+.levels_btn.active{
+  border-radius: 10px;
+  outline: 3px dashed var(--border-color-active); 
+  outline-offset: 6px; 
+}
+
+.levels_info{
+  display: flex;
+  gap: 140px;
+  transition: opacity 0.3s ease;
+}
+.levels_info_main{
+  max-width: 660px;
+}
+.levels_info_title{
+  font-size: 60px;
+  font-weight: normal;
+  font-family: "Brusnika";
+  margin: 0 0 10px 0;
+}
+.levels_info_text{
+  font-family: "Rounded Mplus 1c Light";
+  font-size: 24px;
+  margin: 0 0 90px 0;
+}
+.levels_info_btn{
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  width: 280px;
+  height: 50px;
+  font-size: 22px;
+  font-family: "Rounded Mplus 1c Light";
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.levels_info_dop{
+  max-width: 660px;
+}
+.levels_info_dop p{
+  font-size: 24px;
+  line-height: 270%;
+  margin: 0;
+}
+/*                levels             */
