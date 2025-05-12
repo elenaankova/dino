@@ -46,10 +46,10 @@ input[type='checkbox'] {
   --button-text: #FAFFFB;
   --button-bg-active: #A0B297;
   --border-color-active: #A0B297;
-  
-
-  --border-color: #410e28;
-  --chekbox: #EDC6D1;
+  --bg-color-one: #D6E2CC;
+  --bg-color-two: #F4EFE2;
+  /* --border-color: #410e28; */
+  /* --chekbox: #EDC6D1; */
 }
 
 
@@ -271,3 +271,188 @@ input[type='checkbox'] {
   margin: 0;
 }
 /*                levels             */
+
+/*                from_zero             */
+.from_zero{
+  max-width: 100%;
+}
+.from_zero_content{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 0;
+}
+.from_zero_main{
+  max-width: 600px;
+}
+.from_zero_title{
+  font-size: 70px;
+  font-weight: normal;
+  font-family: "Brusnika";
+  margin: 0 0 30px 0;
+}
+.from_zero_text{
+  font-family: "Rounded Mplus 1c Light";
+  font-size: 26px;
+  margin: 0 0 180px 0;
+}
+.from_zero_btn{
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  width: 280px;
+  height: 50px;
+  font-size: 22px;
+  font-family: "Rounded Mplus 1c Light";
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.from_zero_image{
+  max-width: 670px;
+  margin: 0;
+}
+.from_zero_img{
+  width: 100%;
+}
+/*                from_zero             */
+
+/*                premium             */
+.premium{
+  max-width: 100%;
+  margin-bottom: 190px;
+}
+.premium_title{
+  font-size: 70px;
+  font-weight: normal;
+  font-family: "Brusnika";
+  margin: 0 0 50px 0;
+}
+.premium_content{
+  display: grid;
+  grid-template-columns: repeat(2, 550px);
+  column-gap: 120px;
+  row-gap: 60px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 80px auto;
+}
+.premium_box{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.premium_box_image{
+  max-width: 225px;
+  margin: 0;
+}
+.premium_box_img{
+  width: 100%;
+}
+.premium_box_text{
+  font-size: 26px;
+  margin: 0;
+  max-width: 300px;
+}
+.premium_button{
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+.premium_btn{
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  width: 280px;
+  height: 50px;
+  font-size: 22px;
+  font-family: "Rounded Mplus 1c Light";
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*                premium             */
+
+/*                reviews             */
+.reviews{
+  max-width: 100%;
+  margin-bottom: 190px;
+}
+.reviews_title{
+  font-size: 70px;
+  font-weight: normal;
+  font-family: "Brusnika";
+  margin: 0 0 30px 0;
+}
+.reviews_content{
+  /* grid-template-columns: repeat(auto-fill, minmax(345px, 1fr)); */
+  /* display: grid;
+  grid-auto-flow: dense;
+  align-items: start;
+  grid-template-columns: repeat(4, 1fr); */
+
+  width: 100%;
+  max-width: 1400px; 
+  gap: 20px;
+  column-count: 4;
+
+  /* display: flex;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  max-height: 5000px; 
+  align-content: flex-start; */
+}
+.review {
+  /* height: fit-content;
+  grid-column: span 1;
+  max-height: 100%; */
+
+  display: inline-block;
+  /* width: 100%; */
+  break-inside: avoid;
+
+  /* max-width: 250px;
+  min-width: 200px; */
+
+  /* flex: 1 0 calc(25% - 20px);
+  min-width: 345px;
+  box-sizing: border-box;
+  break-inside: avoid;  */
+  
+  background-color: var(--bg-color-two);
+  padding: 30px 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+.review.green{
+background-color: var(--bg-color-one);
+}
+.review_text {
+  font-size: 22px;
+  color: var(--text-color);
+  width: 100%;
+  text-align: justify; /* Выравнивание по ширине */
+  hyphens: auto;       /* Перенос слов (поддержка в браузерах) */
+  word-break: break-word; /* Перенос длинных слов */
+  margin: 0 0 50px 0;
+}
+.review_info{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.review_image{
+  max-width: 75px;
+  margin: 0;
+}
+.review_img{
+  width: 100%;
+}
+.review_author {
+  font-family: "Brusnika";
+  font-size: 40px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+/*                reviews             */
