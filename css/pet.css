@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Brusnika";
+  src: url("../fonts/Brusnika.otf");
+}
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf");
+}
+@font-face {
+  font-family: "Rounded Mplus 1c Light";
+  src: url("../fonts/MPLUSRounded1c-Light.ttf");
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+  background-color: var(--fon);
+  color: var(--text-color);
+  font-family: "Rounded Mplus 1c";
+  position: relative;
+  padding: 0 20px;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+hr {
+  height: 1px;
+  background-color: var(--border-color);
+}
+input[type='checkbox'] {
+  width: 30px;
+  /* background-color: #B0206B; */
+  border: none;
+}
+
+:root {
+  /* Светлая тема (по умолчанию) */
+  --fon: #FAFFFB;
+  --text-color: #12321A;
+  /* --header-bg: #fff; */
+  /* --card-bg: #fff; */
+  --button-bg: #6A9929;
+  --button-bg-two: #EE9D84;
+  --button-text: #FAFFFB;
+  --button-bg-active: #A0B297;
+  --border-color-active: #A0B297;
+  --bg-color-one: #D6E2CC;
+  --bg-color-two: #F4EFE2;
+  --bg-color-three: #A0B297;
+  /* --border-color: #410e28; */
+  /* --chekbox: #EDC6D1; */
+}
+
+
+/*               section pet             */
+.pet{
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.pet_fon_image{
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.pet_fon_image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background: rgba(136, 136, 136, 0.4);
+}
+.pet_fon_img{
+    width: 100%;
+}
+.pet_rocky_image{
+  max-width: 400px;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.pet_rocky_img{
+    width: 100%;
+}
+
+/*               section pet             */
+
+
+/*               section feed             */
+.feed{
+  max-width: 430px;
+  margin: 0 auto 60px auto;
+}
+.feed_button{
+  max-width: 270px;
+  margin: 0 auto 20px auto;
+}
+.feed_btn{
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  width: 270px;
+  height: 40px;
+  font-size: 26px;
+  /* font-family: "Rounded Mplus 1c Light"; */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.feed_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.feed_info span{
+  margin: 0;
+  font-size: 42px;
+}
+.feed_info p{
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+.feed_info a{
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+/*               section feed             */
+
+/*               section crumbs             */
+.crumbs{
+  margin-bottom: 100px;
+}
+.crumbs a{
+  font-size: 15px;
+}
+/*               section crumbs             */
+
+
+/*               section shop             */
+.shop{
+  max-width: 100%;
+  margin-bottom: 150px;
+}
+.shop_title{
+  font-size: 3.2vw;
+  font-weight: normal;
+  font-family: "Brusnika";
+  margin: 0 0 30px 0;
+}
+.shop_buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+.shop_btn{
+  background-color: var(--button-bg-active);
+  color: var(--button-text);
+  width: 280px;
+  height: 40px;
+  font-size: 20px;
+  font-family: "Rounded Mplus 1c Light";
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.shop_btn:hover{
+  border-radius: 10px;
+  outline: 3px dashed var(--border-color-active); 
+  outline-offset: 6px;            
+}
+.shop_btn.active{
+  border-radius: 10px;
+  outline: 3px dashed var(--border-color-active); 
+  outline-offset: 6px; 
+}
+
+.shop_content{
+    max-width: 920px;
+    margin: 0 auto;
+}
+.shop_cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.shop_card{
+  max-width: 290px;
+  background-color: var(--bg-color-two);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 0 0;
+}
+.shop_card_image{
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+.shop_card_img{
+    width: 100%;
+}
+.shop_card_name{
+    margin: 0;
+    padding: 15px 20px;
+    text-align: center;
+    background-color: var(--bg-color-one);
+}
+.shop_card_name p {
+    margin: 0;
+    font-size: 18px;
+}
+/*               section shop             */
