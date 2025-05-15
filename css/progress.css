@@ -1,0 +1,400 @@
+@font-face {
+  font-family: "Brusnika";
+  src: url("../fonts/Brusnika.otf");
+}
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf");
+}
+@font-face {
+  font-family: "Rounded Mplus 1c Light";
+  src: url("../fonts/MPLUSRounded1c-Light.ttf");
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+  background-color: var(--fon);
+  color: var(--text-color);
+  font-family: "Rounded Mplus 1c";
+  position: relative;
+  padding: 0 20px;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+hr {
+  height: 1px;
+  background-color: var(--border-color);
+}
+input[type='checkbox'] {
+  width: 30px;
+  /* background-color: #B0206B; */
+  border: none;
+}
+
+:root {
+  /* Светлая тема (по умолчанию) */
+  --fon: #FAFFFB;
+  --text-color: #12321A;
+  /* --header-bg: #fff; */
+  /* --card-bg: #fff; */
+  --button-bg: #6A9929;
+  --button-bg-two: #EE9D84;
+  --button-text: #FAFFFB;
+  --button-bg-active: #A0B297;
+  --border-color-active: #A0B297;
+  --bg-color-one: #D6E2CC;
+  --bg-color-two: #F4EFE2;
+  --bg-color-three: #A0B297;
+  /* --border-color: #410e28; */
+  /* --chekbox: #EDC6D1; */
+}
+
+
+
+/*               section crumbs_and_btn             */
+.crumbs_and_btn{
+  margin-top: 60px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.crumbs_content a{
+  font-size: 15px;
+}
+
+.language{
+   margin-left: 500px;
+}
+.language_select{
+  background-color: var(--bg-color-three);
+  color: var(--button-text);
+  width: 270px;
+  height: 35px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Rounded Mplus 1c Light";
+  border: none;
+  border-radius: 6px;
+  cursor: pointer; 
+}
+
+.premium_btn{
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  width: 270px;
+  height: 35px;
+  font-size: 20px;
+  font-family: "Rounded Mplus 1c Light";
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/*               section crumbs_and_btn             */
+
+/*               section your_level             */
+.your_level{
+  max-width: 100%;
+  margin-bottom: 120px;
+}
+.your_level_title{
+  font-size: 3.0vw;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Brusnika";
+  margin: 0 0 15px 0;
+}
+.your_level_content{
+  background-color: var(--bg-color-two);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 20px;
+}
+.triangle_btn{
+  background-color: var(--bg-color-two);
+  border: none;
+  cursor: pointer;
+}
+.level-triangle-left {
+  width: 45px;
+  height: 45px;
+  background-color: var(--button-bg-two);
+  clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}
+.level-triangle-right {
+  width: 45px;
+  height: 45px;
+  background-color: var(--button-bg-two);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+}
+
+
+.your_levels_conteiner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+.your_levels_shape {
+  position: relative;
+  width: 250px;
+  height: 40px;
+  background: var(--bg-color-one); 
+  margin: 0;
+}
+/* Втянутый треугольник слева */
+.your_levels_shape::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid var(--bg-color-two);
+  z-index: 1;
+}
+/* Выпуклый треугольник справа */
+.your_levels_shape::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px; /* смещаем правее */
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid var(--bg-color-one); 
+  z-index: 2;
+}
+
+.your_levels_shape.active {
+  background: var(--bg-color-three);
+}
+.your_levels_shape.active::after {
+  border-left: 30px solid var(--bg-color-three); 
+}
+
+.your_levels_shape p{
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  margin: auto;
+}
+/*               section your_level             */
+
+
+
+/*               section your_stage             */
+.your_stage{
+  max-width: 100%;
+  margin-bottom: 120px;
+}
+.your_stage_title{
+  font-size: 3.0vw;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Brusnika";
+  margin: 0 0 15px 0;
+}
+.your_stage_content{
+  background-color: var(--bg-color-two);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+}
+.triangle_btn{
+  background-color: var(--bg-color-two);
+  border: none;
+  cursor: pointer;
+}
+.stage-triangle-left {
+  width: 55px;
+  height: 55px;
+  background-color: var(--button-bg-two);
+  clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}
+.stage-triangle-right {
+  width: 55px;
+  height: 55px;
+  background-color: var(--button-bg-two);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+}
+
+
+.your_stages_conteiner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+.your_stages_shape {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  background: var(--bg-color-one); 
+  margin: 0;
+}
+/* Втянутый треугольник слева */
+.your_stages_shape::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 30px solid var(--bg-color-two);
+  z-index: 1;
+}
+/* Выпуклый треугольник справа */
+.your_stages_shape::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px; /* смещаем правее */
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 30px solid var(--bg-color-one); 
+  z-index: 2;
+}
+
+.your_stages_shape.active {
+  background: var(--bg-color-three);
+}
+.your_stages_shape.active::after {
+  border-left: 30px solid var(--bg-color-three); 
+}
+
+.your_stages_shape p{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  font-size: 28px;
+  margin: auto;
+}
+/*               section your_stage             */
+
+
+/*               section lesson             */
+.lesson{
+  max-width: 100%;
+  margin-bottom: 150px;
+}
+.lesson_title{
+  font-size: 3.6vw;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Brusnika";
+  margin: 0 ;
+}
+
+.lesson_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+}
+
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--bg-color-one);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+    margin: 30px 0;
+    cursor: pointer;
+    border: none;
+}
+/* .circle.start, .circle.end {
+    width: 160px;
+    height: 160px;
+} */
+.circle.active {
+    background: var(--bg-color-three);
+}
+
+
+/* Вертикальные пунктирные линии */
+.circle::after {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to bottom, 
+        var(--bg-color-one) 50%, 
+        transparent 50%);
+    background-size: 4px 15px;
+    width: 4px;
+    height: 120px; /* Длина линии */
+    top: -120px; /* Позиция над кругом */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -10;
+}
+
+/* Горизонтальные пунктирные линии для змейки */
+.circle:nth-child(even)::before,
+.circle:nth-child(odd):not(:first-child)::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to right, 
+        var(--bg-color-one) 50%, 
+        transparent 50%);
+    background-size: 15px 4px;
+    /* width: 100px; */
+    height: 4px;
+    top: -120px;
+    z-index: -10;
+}
+
+/* Для четных кругов (справа) */
+.circle:nth-child(even) {
+     align-self: flex-end;
+    /* margin-right: 150px; */
+}
+
+.circle:nth-child(even)::before {
+     width: calc(900px + 60px);
+    right: 50%;
+}
+
+/* Для нечетных кругов (слева) */
+.circle:nth-child(odd){
+   align-self: flex-start;
+    /* margin-left: 150px; */
+}
+
+.circle:nth-child(odd):not(:first-child)::before {
+   width: calc(900px + 60px);
+    left: 50%;
+}
+
+/* Убираем линии у первого круга */
+.circle:first-child::after,
+.circle:first-child::before {
+    display: none;
+}
+
+/*               section lesson             */
