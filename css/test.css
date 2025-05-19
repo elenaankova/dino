@@ -50,7 +50,7 @@ input[type='checkbox'] {
   --bg-color-one: #D6E2CC;
   --bg-color-two: #F4EFE2;
   --bg-color-three: #A0B297;
-  --bg-color-four: #C9A498;
+  --bg-color-four: #d8957e;
   /* --border-color: #410e28; */
   /* --chekbox: #EDC6D1; */
 }
@@ -114,6 +114,9 @@ input[type='checkbox'] {
 }
 .stage.active{
   background-color: var(--button-bg);
+}
+.stage.false{
+  background-color: var(--bg-color-four);
 }
 .beetwen{
   height: 40px;
@@ -182,6 +185,112 @@ input[type='checkbox'] {
 
 /*             main             */
 
+
+/*         modal_back           */
+.modal_back{
+  display: none;
+  width: 420px;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; 
+  /* animation: fadeIn 0.3s; */
+}
+.modal_back_conent{
+  padding: 20px 30px;
+  background-color: var(--bg-color-one);
+  border: 2px solid var(--bg-color-three);
+  text-align: center;
+}
+.modal_conent h1{
+  font-size: 22px;
+  margin: 0 0 10px 0;
+}
+.modal_conent p{
+  font-size: 16px;
+  margin: 0 0 30px 0;
+}
+
+.modal_back_btn, .modal_change_btn{
+  background-color: var(--bg-color-three);
+  color: var(--text-color);
+  width: 160px;
+  height: 30px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*              modal_back             */
+
+
+/*         modal_end           */
+.modal_end{
+  display: none;
+  width: 420px;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.modal_end_conent{
+  padding: 20px 30px;
+  background-color: var(--bg-color-two);
+  border: 1px solid var(--bg-color-three);
+  text-align: center;
+  z-index: 20;
+}
+.modal_end h1{
+  font-size: 22px;
+  margin: 0 0 20px 0;
+}
+.modal_end_image{
+  max-width: 240px;
+  margin: 0 auto 20px auto;
+}
+.modal_end_img{
+  width: 100%;
+}
+.modal_end_info{
+    margin-bottom: 30px;
+}
+.modal_end_info_answer{
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.modal_end_info_answer span{
+  font-size: 30px;
+  margin: 0 10px 0 0;
+}
+.modal_end_info_error{
+  font-size: 20px;
+  margin: 0;
+}
+
+.modal_end_btn{
+  background-color: var(--button-bg);
+  color: var(--fon);
+  width: 220px;
+  height: 35px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Rounded Mplus 1c Light";
+  overflow: hidden;
+}
+.modal_end_btn:hover{
+  background-image: url('../image/test/кнопка\ с\ лапками.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/*              modal_end             */
+
+
+
 /*             true_answer             */
 .true_answer{
   display: none;
@@ -224,7 +333,7 @@ input[type='checkbox'] {
 
 /*             false_answer             */
 .false_answer{
-  /* display: none; */
+  display: none;
   width: 100vw;
   position: relative;
   left: 50%;

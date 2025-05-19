@@ -78,7 +78,6 @@ input[type='checkbox'] {
 /*                banner             */
 .banner {
   height: 800px;
-  /* margin-bottom: 120px; */
 }
 
 .banner_content {
@@ -89,13 +88,13 @@ input[type='checkbox'] {
 }
 
 .banner_content_text {
-  font-size: 2.8vw;
+  font-size: 2.2vw;
   font-weight: 100;
   margin: 0 0 15px 0;
 }
 
 .banner_content_tagline {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100;
   margin: 0 0 100px 0;
 }
@@ -103,9 +102,9 @@ input[type='checkbox'] {
 .banner_content_btn {
   background-color: var(--button-bg);
   color: var(--button-text);
-  width: 280px;
-  height: 50px;
-  font-size: 22px;
+  width: 260px;
+  height: 40px;
+  font-size: 20px;
   font-family: "Rounded Mplus 1c Light";
   border: none;
   border-radius: 10px;
