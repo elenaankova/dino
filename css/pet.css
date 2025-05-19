@@ -107,7 +107,7 @@ input[type='checkbox'] {
   color: var(--button-text);
   width: 270px;
   height: 40px;
-  font-size: 26px;
+  font-size: 24px;
   /* font-family: "Rounded Mplus 1c Light"; */
   border: none;
   border-radius: 10px;

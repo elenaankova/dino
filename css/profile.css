@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "Brusnika";
+  src: url("../fonts/Brusnika.otf");
+}
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf");
+}
+@font-face {
+  font-family: "Rounded Mplus 1c Light";
+  src: url("../fonts/MPLUSRounded1c-Light.ttf");
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+  background-color: var(--fon);
+  color: var(--text-color);
+  font-family: "Rounded Mplus 1c";
+  position: relative;
+  padding: 0 20px;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+hr {
+  height: 1px;
+  background-color: var(--border-color);
+}
+input[type='checkbox'] {
+  width: 30px;
+  /* background-color: #B0206B; */
+  border: none;
+}
+
+:root {
+  /* Светлая тема (по умолчанию) */
+  --fon: #FAFFFB;
+  --text-color: #12321A;
+  /* --header-bg: #fff; */
+  /* --card-bg: #fff; */
+  --button-bg: #6A9929;
+  --button-text: #FAFFFB;
+  --button-bg-active: #A0B297;
+  --border-color-active: #A0B297;
+  --bg-color-one: #D6E2CC;
+  --bg-color-two: #F4EFE2;
+  --bg-color-three: #A0B297;
+  /* --border-color: #410e28; */
+  /* --chekbox: #EDC6D1; */
+}
+
+/*                profile             */
+.profile{
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-color-two);
+}
+.profile_content{
+  max-width: 1200px;
+  margin: 0 auto; 
+  display: flex;
+  padding: 50px 0 10px 0;
+  gap: 30px;
+  /* align-items: baseline; */
+}
+.profile_image{
+    max-width: 100px;
+}
+.profile_img{
+    width: 100%;
+}
+.profile_name_user{
+    font-size: 20px;
+    margin: 60px 0 0 0;
+    max-height: 30px;
+}
+.profile_settings{
+    background-color: var(--bg-color-two);
+    border: none;
+    max-height: 35px;
+    max-width: 35px;
+    margin: 60px 0 0 0;
+    cursor: pointer;
+}
+.profile_settings_img{
+    width: 100%;
+}
+
+/*                profile             */
+
+/*         modal_profile_settings        */
+.modal_profile_settings{
+  display: none;
+  width: 400px;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; 
+  /* animation: fadeIn 0.3s; */
+}
+.modal_conent{
+  padding: 20px 30px;
+  background-color: var(--bg-color-one);
+  border: 2px solid var(--bg-color-three);
+}
+.modal_conent h1{
+  font-size: 24px;
+  margin: 0 0 30px 0;
+}
+.modal_avatar_title{
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+.modal_avatar{
+  max-width: 100px;
+}
+.modal_avatar_img{
+  width: 100%;
+}
+.modal_avatar_change{
+  margin: 5px 0 30px 0;
+}
+.modal_name{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+.modal_name p{
+  font-size: 16px;
+  margin: 0 10px 0 0;
+}
+.modal_name_user{
+  height: 25px;
+}
+.modal_back, .modal_change{
+  background-color: var(--bg-color-three);
+  color: var(--fon);
+  width: 160px;
+  height: 30px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*                modal_profile_settings             */
+
+/*                menu             */
+.menu{
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.menu_content{
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--bg-color-one);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu_progress, .menu_rocky{
+  width: 240px;
+  height: 36px;
+  background-color: var(--button-bg);
+}
+.menu_progress_btn, .menu_rocky_btn{
+  width: 100%;
+  background-color: var(--button-bg);
+  border: none;
+  padding: 6px 0;
+  font-size: 20px;
+  color: var(--fon);
+  font-family: "Rounded Mplus 1c Light";
+  cursor: pointer;
+}
+.menu_achiev{
+  width: 270px;
+  height: 55px;
+  background-color: var(--button-bg);
+}
+.menu_achiev p{
+  width: 100%;
+  background-color: var(--button-bg);
+  border: none;
+  padding: 9px 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 23px;
+  color: var(--fon);
+  font-family: "Rounded Mplus 1c Light";
+}
+
+/*                menu             */
+
+
+/*               section crumbs             */
+.crumbs{
+  margin-bottom: 60px;
+}
+.crumbs a{
+  font-size: 15px;
+}
+/*               section crumbs             */
+
+
+/*               section shop             */
+.achievements{
+  max-width: 100%;
+  margin-bottom: 150px;
+}
+.achievements_content{
+  max-width: 920px;
+  margin: 0 auto;
+}
+.achievements_cards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.achievements_card{
+  max-width: 280px;
+  background-color: var(--bg-color-one);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.achievements_card.noactive{
+  max-width: 280px;
+  background-color: var(--bg-color-one);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.achievements_card.noactive::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(80, 80, 80, 0.5); 
+  pointer-events: none; 
+  z-index: 1;
+}
+.achievements_card_image{
+  /* max-width: 150px; */
+  margin-bottom: 10px;
+  padding: 30px;
+  background-color: var(--bg-color-two);
+}
+.achievements_card_img{
+  width: 100%;
+}
+.achievements_card_info{
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+  /* background-color: var(--bg-color-one); */
+}
+.achievements_card_info_name{
+  margin: 0;
+  font-size: 18px;
+}
+.achievements_card_info_text{
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+.achievements_card_info_date{
+  margin: 30px 0 0 0;
+  font-size: 15px;
+}
+/*               section shop             */
+
+
+/*                premium             */
+.premium{
+  max-width: 100%;
+  margin-bottom: 190px;
+}
+.premium_title{
+  font-size: 3.0vw;
+  font-weight: normal;
+  font-family: "Brusnika";
+  margin: 0 0 30px 0;
+}
+.premium_content{
+  display: grid;
+  grid-template-columns: repeat(2, 580px);
+  column-gap: 30px;
+  row-gap: 60px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 80px auto;
+}
+.premium_box{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.premium_box_image{
+  max-width: 180px;
+  margin: 0;
+}
+.premium_box_img{
+  width: 100%;
+}
+.premium_box_text{
+  font-size: 20px;
+  margin: 0;
+  max-width: 300px;
+}
+.premium_button{
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+.premium_btn{
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  width: 260px;
+  height: 40px;
+  font-size: 20px;
+  font-family: "Rounded Mplus 1c Light";
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*                premium             */

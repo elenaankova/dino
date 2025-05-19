@@ -60,7 +60,7 @@ input[type='checkbox'] {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
-  gap: 90px;
+  gap: 200px;
   align-items: center;
   padding: 0 20px;
 }
@@ -119,7 +119,7 @@ input[type='checkbox'] {
   margin-bottom: 190px;
 }
 .appli_title{
-  font-size: 3.8vw;
+  font-size: 3.0vw;
   font-weight: normal;
   font-family: "Brusnika";
   margin: 0 0 30px 0;
@@ -127,19 +127,19 @@ input[type='checkbox'] {
 .appli_content{
   display: grid;
   grid-template-columns: repeat(2, 400px);
-  column-gap: 90px;
+  column-gap: 60px;
   row-gap: 15px;
 }
 .appli_content_paragraph{
   display: flex;      
   align-items: center; 
   /* align-items: baseline;  */ /* Выравнивание по базовой линии текста */
-  gap: 40px;
-  font-size: 4.0vw;
+  gap: 20px;
+  font-size: 2.5vw;
   font-weight: 100;
 }
 .appli_content_paragraph p{
-  font-size: 22px;
+  font-size: 18px;
 }
 /*                application             */
 
@@ -149,7 +149,7 @@ input[type='checkbox'] {
   margin-bottom: 190px;
 }
 .levels_title{
-  font-size: 3.8vw;
+  font-size: 3.0vw;
   font-weight: normal;
   font-family: "Brusnika";
   margin: 0 0 40px 0;
@@ -157,14 +157,14 @@ input[type='checkbox'] {
 .levels_buttons{
   width: 100%;
   display: flex;
-  gap: 45px;
-  margin-bottom: 90px;
+  gap: 130px;
+  margin-bottom: 60px;
 }
 .levels_btn{
   background-color: var(--button-bg-active);
   color: var(--button-text);
-  width: 325px;
-  height: 50px;
+  width:300px;
+  height: 38px;
   font-size: 22px;
   font-family: "Rounded Mplus 1c Light";
   border: none;
@@ -177,12 +177,12 @@ input[type='checkbox'] {
               0 0 0 7px var(--border-color-active);   */
   /* transform: scale(1.02); */
   border-radius: 10px;
-  outline: 3px dashed var(--border-color-active); 
+  outline: 2px dashed var(--border-color-active); 
   outline-offset: 6px;            
 }
 .levels_btn.active{
   border-radius: 10px;
-  outline: 3px dashed var(--border-color-active); 
+  outline: 2px dashed var(--border-color-active); 
   outline-offset: 6px; 
 }
 
@@ -195,22 +195,22 @@ input[type='checkbox'] {
   max-width: 660px;
 }
 .levels_info_title{
-  font-size: 60px;
+  font-size: 45px;
   font-weight: normal;
   font-family: "Brusnika";
   margin: 0 0 10px 0;
 }
 .levels_info_text{
   font-family: "Rounded Mplus 1c Light";
-  font-size: 24px;
+  font-size: 20px;
   margin: 0 0 90px 0;
 }
 .levels_info_btn{
   background-color: var(--button-bg);
   color: var(--button-text);
-  width: 280px;
-  height: 50px;
-  font-size: 22px;
+  width: 260px;
+  height: 40px;
+  font-size: 20px;
   font-family: "Rounded Mplus 1c Light";
   border: none;
   border-radius: 10px;
@@ -221,7 +221,7 @@ input[type='checkbox'] {
   max-width: 660px;
 }
 .levels_info_dop p{
-  font-size: 24px;
+  font-size: 22px;
   line-height: 270%;
   margin: 0;
 }
@@ -241,29 +241,29 @@ input[type='checkbox'] {
   max-width: 600px;
 }
 .from_zero_title{
-  font-size: 3.8vw;
+  font-size: 3.0vw;
   font-weight: normal;
   font-family: "Brusnika";
   margin: 0 0 30px 0;
 }
 .from_zero_text{
   font-family: "Rounded Mplus 1c Light";
-  font-size: 26px;
-  margin: 0 0 180px 0;
+  font-size: 22px;
+  margin: 0 0 160px 0;
 }
 .from_zero_btn{
   background-color: var(--button-bg);
   color: var(--button-text);
-  width: 280px;
-  height: 50px;
-  font-size: 22px;
+  width: 260px;
+  height: 40px;
+  font-size: 20px;
   font-family: "Rounded Mplus 1c Light";
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 .from_zero_image{
-  max-width: 670px;
+  max-width: 600px;
   margin: 0;
 }
 .from_zero_img{
@@ -277,15 +277,15 @@ input[type='checkbox'] {
   margin-bottom: 190px;
 }
 .premium_title{
-  font-size: 3.8vw;
+  font-size: 3.0vw;
   font-weight: normal;
   font-family: "Brusnika";
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
 }
 .premium_content{
   display: grid;
-  grid-template-columns: repeat(2, 550px);
-  column-gap: 120px;
+  grid-template-columns: repeat(2, 580px);
+  column-gap: 30px;
   row-gap: 60px;
   align-items: center;
   justify-content: center;
@@ -297,14 +297,14 @@ input[type='checkbox'] {
   gap: 30px;
 }
 .premium_box_image{
-  max-width: 225px;
+  max-width: 180px;
   margin: 0;
 }
 .premium_box_img{
   width: 100%;
 }
 .premium_box_text{
-  font-size: 26px;
+  font-size: 20px;
   margin: 0;
   max-width: 300px;
 }
@@ -315,9 +315,9 @@ input[type='checkbox'] {
 .premium_btn{
   background-color: var(--button-bg);
   color: var(--button-text);
-  width: 280px;
-  height: 50px;
-  font-size: 22px;
+  width: 260px;
+  height: 40px;
+  font-size: 20px;
   font-family: "Rounded Mplus 1c Light";
   border: none;
   border-radius: 10px;
@@ -332,7 +332,7 @@ input[type='checkbox'] {
   margin-bottom: 190px;
 }
 .reviews_title{
-  font-size: 3.8vw;
+  font-size: 3.0vw;
   font-weight: normal;
   font-family: "Brusnika";
   margin: 0 0 30px 0;
@@ -379,13 +379,13 @@ input[type='checkbox'] {
 background-color: var(--bg-color-one);
 }
 .review_text {
-  font-size: 22px;
+  font-size: 18px;
   color: var(--text-color);
   width: 100%;
   text-align: justify; /* Выравнивание по ширине */
   hyphens: auto;       /* Перенос слов (поддержка в браузерах) */
   word-break: break-word; /* Перенос длинных слов */
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
 }
 .review_info{
   display: flex;
@@ -393,7 +393,7 @@ background-color: var(--bg-color-one);
   align-items: center;
 }
 .review_image{
-  max-width: 75px;
+  max-width: 60px;
   margin: 0;
 }
 .review_img{
@@ -401,7 +401,7 @@ background-color: var(--bg-color-one);
 }
 .review_author {
   font-family: "Brusnika";
-  font-size: 40px;
+  font-size: 30px;
   color: var(--text-color);
   margin: 0;
 }

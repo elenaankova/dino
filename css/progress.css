@@ -73,7 +73,7 @@ input[type='checkbox'] {
 .language_select{
   background-color: var(--bg-color-three);
   color: var(--button-text);
-  width: 270px;
+  width: 260px;
   height: 35px;
   font-size: 20px;
   text-align: center;
@@ -86,7 +86,7 @@ input[type='checkbox'] {
 .premium_btn{
   background-color: var(--button-bg);
   color: var(--button-text);
-  width: 270px;
+  width: 260px;
   height: 35px;
   font-size: 20px;
   font-family: "Rounded Mplus 1c Light";
@@ -100,14 +100,14 @@ input[type='checkbox'] {
 /*               section your_level             */
 .your_level{
   max-width: 100%;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 .your_level_title{
-  font-size: 3.0vw;
+  font-size: 2.6vw;
   font-weight: normal;
   text-align: center;
   font-family: "Brusnika";
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
 }
 .your_level_content{
   background-color: var(--bg-color-two);
@@ -122,14 +122,14 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 .level-triangle-left {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   background-color: var(--button-bg-two);
   clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
 }
 .level-triangle-right {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   background-color: var(--button-bg-two);
   clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
 }
@@ -143,8 +143,8 @@ input[type='checkbox'] {
 }
 .your_levels_shape {
   position: relative;
-  width: 250px;
-  height: 40px;
+  width: 240px;
+  height: 30px;
   background: var(--bg-color-one); 
   margin: 0;
 }
@@ -156,9 +156,9 @@ input[type='checkbox'] {
   left: 0;
   width: 0;
   height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid var(--bg-color-two);
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid var(--bg-color-two);
   z-index: 1;
 }
 /* Выпуклый треугольник справа */
@@ -166,12 +166,12 @@ input[type='checkbox'] {
   content: "";
   position: absolute;
   top: 0;
-  right: -30px; /* смещаем правее */
+  right: -20px; /* смещаем правее */
   width: 0;
   height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid var(--bg-color-one); 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid var(--bg-color-one); 
   z-index: 2;
 }
 
@@ -179,13 +179,13 @@ input[type='checkbox'] {
   background: var(--bg-color-three);
 }
 .your_levels_shape.active::after {
-  border-left: 30px solid var(--bg-color-three); 
+  border-left: 20px solid var(--bg-color-three); 
 }
 
 .your_levels_shape p{
   text-align: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
   margin: auto;
 }
 /*               section your_level             */
@@ -198,18 +198,18 @@ input[type='checkbox'] {
   margin-bottom: 120px;
 }
 .your_stage_title{
-  font-size: 3.0vw;
+  font-size: 2.6vw;
   font-weight: normal;
   text-align: center;
   font-family: "Brusnika";
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
 }
 .your_stage_content{
   background-color: var(--bg-color-two);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 20px;
+  padding: 6px 15px;
 }
 .triangle_btn{
   background-color: var(--bg-color-two);
@@ -217,14 +217,14 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 .stage-triangle-left {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   background-color: var(--button-bg-two);
   clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
 }
 .stage-triangle-right {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   background-color: var(--button-bg-two);
   clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
 }
@@ -238,8 +238,8 @@ input[type='checkbox'] {
 }
 .your_stages_shape {
   position: relative;
-  width: 250px;
-  height: 50px;
+  width: 240px;
+  height: 36px;
   background: var(--bg-color-one); 
   margin: 0;
 }
@@ -251,9 +251,9 @@ input[type='checkbox'] {
   left: 0;
   width: 0;
   height: 0;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-left: 30px solid var(--bg-color-two);
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 20px solid var(--bg-color-two);
   z-index: 1;
 }
 /* Выпуклый треугольник справа */
@@ -261,12 +261,12 @@ input[type='checkbox'] {
   content: "";
   position: absolute;
   top: 0;
-  right: -30px; /* смещаем правее */
+  right: -20px; /* смещаем правее */
   width: 0;
   height: 0;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-left: 30px solid var(--bg-color-one); 
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 20px solid var(--bg-color-one); 
   z-index: 2;
 }
 
@@ -274,15 +274,15 @@ input[type='checkbox'] {
   background: var(--bg-color-three);
 }
 .your_stages_shape.active::after {
-  border-left: 30px solid var(--bg-color-three); 
+  border-left: 20px solid var(--bg-color-three); 
 }
 
 .your_stages_shape p{
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   justify-content: center;
   height: 50px;
-  font-size: 28px;
+  font-size: 22px;
   margin: auto;
 }
 /*               section your_stage             */
@@ -294,7 +294,7 @@ input[type='checkbox'] {
   margin-bottom: 150px;
 }
 .lesson_title{
-  font-size: 3.6vw;
+  font-size: 3.0vw;
   font-weight: normal;
   text-align: center;
   font-family: "Brusnika";
@@ -307,21 +307,21 @@ input[type='checkbox'] {
     align-items: center;
     padding: 0;
     margin: 0 auto;
-    max-width: 1140px;
+    max-width: 800px;
     position: relative;
 }
 
 
 .circle {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background: var(--bg-color-one);
     color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     position: relative;
     z-index: 10;
@@ -347,8 +347,8 @@ input[type='checkbox'] {
         transparent 50%);
     background-size: 4px 15px;
     width: 4px;
-    height: 120px; /* Длина линии */
-    top: -120px; /* Позиция над кругом */
+    height: 100px; /* Длина линии */
+    top: -100px; /* Позиция над кругом */
     left: 50%;
     transform: translateX(-50%);
     z-index: -10;
@@ -365,7 +365,7 @@ input[type='checkbox'] {
     background-size: 15px 4px;
     /* width: 100px; */
     height: 4px;
-    top: -120px;
+    top: -100px;
     z-index: -10;
 }
 
@@ -376,7 +376,7 @@ input[type='checkbox'] {
 }
 
 .circle:nth-child(even)::before {
-     width: calc(900px + 60px);
+     width: calc(600px + 60px);
     right: 50%;
 }
 
@@ -387,7 +387,7 @@ input[type='checkbox'] {
 }
 
 .circle:nth-child(odd):not(:first-child)::before {
-   width: calc(900px + 60px);
+   width: calc(600px + 60px);
     left: 50%;
 }
 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/test.css">
+    <title>Профиль</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_content">
+            <a class="header_logo" href="home.html">
+                <img class="header_logo_img" src="../image/лого.svg" alt="">
+            </a>
+            <div class="header_nav">
+                <a class="header_nav_exit" id="nav_btn" href="">ВЫХОД</a>
+                <a class="header_nav_profile" id="nav_btn" href="">ПРОФИЛЬ</a>
+                <a class="header_nav_progress" id="nav_btn" href="">ПРОГРЕСС</a>
+                <a class="header_nav_rocky" id="" href="">РОККИ</a>
+
+                <button class="header_nav_btn">
+                    <div class="header_nav_span">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="main_content">
+            <h1 class="main_title">2 Раздел - 3 урок</h1>
+            <p class="main_progress_title">Ваш прогресс:</p>
+            <div class="main_progress">
+                <button class="main_progress_back">✕</button>
+                <div class="main_progress_conteiner">
+                    <div class="stage active"></div>
+                    <div class="stage"></div>
+                    <div class="stage"></div>
+                    <div class="stage"></div>
+                    <div class="beetwen"></div>
+                    <div class="stage"></div>
+                    <div class="stage"></div>
+                    <div class="stage"></div>
+                    <div class="stage end"></div>
+                </div>
+                <div class="main_lifes">
+                    <p>5</p>
+                    <div class="main_lifes_image">
+                        <img class="main_lifes_img" src="../image/test/сердце.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <p class="main_exercise">Переведите фразу “Здесь так красиво!”</p>
+            <textarea class="main_answer_inp" name="" id=""></textarea>
+            <button class="main_btn" disabled>Сверить ответ</button>
+        </div>
+    </section>
+
+    <section class="true_answer">
+        <div class="true_answer_content">
+            <div class="true_answer_image">
+                <img class="true_answer_img" src="../image/test/радостный дино.png" alt="">
+            </div>
+            <div class="true_answer_info">
+                <h1>Верный ответ</h1>
+                <p>Заметили ошибку? <a href="">Сообщите нам</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="false_answer">
+        <div class="false_answer_content">
+            <div class="false_answer_image">
+                <img class="false_answer_img" src="../image/test/грусный дино.png" alt="">
+            </div>
+            <div class="false_answer_info">
+                <h1>Неверный ответ</h1>
+                <p class="false_answer_true_answer">Правильный ответ: Here is so beautiful.</p>
+                <p class="false_answer_sms">Заметили ошибку? <a href="">Сообщите нам</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/test.js"></script>
+    </body>
+</html>
