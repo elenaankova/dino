@@ -2,17 +2,21 @@
   font-family: "Brusnika";
   src: url("../fonts/Brusnika.otf");
 }
+
 @font-face {
   font-family: "Rounded Mplus 1c";
   src: url("../fonts/MPLUSRounded1c-Regular.ttf");
 }
+
 @font-face {
   font-family: "Rounded Mplus 1c Light";
   src: url("../fonts/MPLUSRounded1c-Light.ttf");
 }
+
 html {
   overflow-x: hidden;
 }
+
 body {
   max-width: 1440px;
   margin: 0 auto 0 auto;
@@ -22,14 +26,17 @@ body {
   position: relative;
   padding: 0 20px;
 }
+
 a {
   color: var(--text-color);
   text-decoration: none;
 }
+
 hr {
   height: 1px;
   background-color: var(--border-color);
 }
+
 input[type='checkbox'] {
   width: 30px;
   /* background-color: #B0206B; */
@@ -69,27 +76,31 @@ input[type='checkbox'] {
 /*                header             */
 
 /*                banner             */
-.banner{
+.banner {
   height: 800px;
   /* margin-bottom: 120px; */
 }
-.banner_content{
+
+.banner_content {
   top: 260px;
   position: absolute;
   max-width: 660px;
   font-family: "Rounded Mplus 1c Light";
 }
-.banner_content_text{
+
+.banner_content_text {
   font-size: 2.8vw;
   font-weight: 100;
   margin: 0 0 15px 0;
 }
-.banner_content_tagline{
+
+.banner_content_tagline {
   font-size: 25px;
   font-weight: 100;
   margin: 0 0 100px 0;
 }
-.banner_content_btn{
+
+.banner_content_btn {
   background-color: var(--button-bg);
   color: var(--button-text);
   width: 280px;
@@ -100,6 +111,18 @@ input[type='checkbox'] {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.banner_img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
 .banner_image{
   max-width: 780px;
   position: absolute;
@@ -107,14 +130,51 @@ input[type='checkbox'] {
   right: 0;
   z-index: 1;
 }
-.banner_img{
+
+.banner_flower{
+  width: 500px;
+  position: absolute;
+  top: 0; 
+  right: -5%;
+  z-index: 1;
+}
+.banner_dino{
+  position: relative;
+  margin-top: 150px;
+  right: 35%;
+  z-index: 3;
+}
+.banner_leaves{
+  position: absolute;
+  max-width: 600px;
+  top: 50%; 
+  right: -5%;
+    z-index: 10;
+}
+
+.banner_flower_img{
   width: 100%;
 }
+.banner_dino_img{
+  width: 100%;
+} 
+.banner_leaves_img{
+  width: 100%; 
+}
+
+
+
+
+
+
+
+
+
 
 /*                banner             */
 
 /*                application             */
-.application{
+.application {
   max-width: 100%;
   margin-bottom: 190px;
 }
@@ -124,7 +184,8 @@ input[type='checkbox'] {
   font-family: "Brusnika";
   margin: 0 0 30px 0;
 }
-.appli_content{
+
+.appli_content {
   display: grid;
   grid-template-columns: repeat(2, 400px);
   column-gap: 60px;
@@ -141,10 +202,11 @@ input[type='checkbox'] {
 .appli_content_paragraph p{
   font-size: 18px;
 }
+
 /*                application             */
 
 /*                levels             */
-.levels{
+.levels {
   max-width: 100%;
   margin-bottom: 190px;
 }
@@ -154,13 +216,15 @@ input[type='checkbox'] {
   font-family: "Brusnika";
   margin: 0 0 40px 0;
 }
-.levels_buttons{
+
+.levels_buttons {
   width: 100%;
   display: flex;
   gap: 130px;
   margin-bottom: 60px;
 }
-.levels_btn{
+
+.levels_btn {
   background-color: var(--button-bg-active);
   color: var(--button-text);
   width:300px;
@@ -172,7 +236,8 @@ input[type='checkbox'] {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.levels_btn:hover{
+
+.levels_btn:hover {
   /* box-shadow: 0 0 0 5px var(--fon),
               0 0 0 7px var(--border-color-active);   */
   /* transform: scale(1.02); */
@@ -186,12 +251,19 @@ input[type='checkbox'] {
   outline-offset: 6px; 
 }
 
-.levels_info{
+.levels_btn.active {
+  border-radius: 10px;
+  outline: 3px dashed var(--border-color-active);
+  outline-offset: 6px;
+}
+
+.levels_info {
   display: flex;
   gap: 140px;
   transition: opacity 0.3s ease;
 }
-.levels_info_main{
+
+.levels_info_main {
   max-width: 660px;
 }
 .levels_info_title{
@@ -200,12 +272,14 @@ input[type='checkbox'] {
   font-family: "Brusnika";
   margin: 0 0 10px 0;
 }
-.levels_info_text{
+
+.levels_info_text {
   font-family: "Rounded Mplus 1c Light";
   font-size: 20px;
   margin: 0 0 90px 0;
 }
-.levels_info_btn{
+
+.levels_info_btn {
   background-color: var(--button-bg);
   color: var(--button-text);
   width: 260px;
@@ -217,7 +291,7 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 
-.levels_info_dop{
+.levels_info_dop {
   max-width: 660px;
 }
 .levels_info_dop p{
@@ -225,19 +299,22 @@ input[type='checkbox'] {
   line-height: 270%;
   margin: 0;
 }
+
 /*                levels             */
 
 /*                from_zero             */
-.from_zero{
+.from_zero {
   max-width: 100%;
 }
-.from_zero_content{
+
+.from_zero_content {
   display: flex;
   justify-content: space-between;
   gap: 40px;
   margin: 0;
 }
-.from_zero_main{
+
+.from_zero_main {
   max-width: 600px;
 }
 .from_zero_title{
@@ -246,12 +323,14 @@ input[type='checkbox'] {
   font-family: "Brusnika";
   margin: 0 0 30px 0;
 }
-.from_zero_text{
+
+.from_zero_text {
   font-family: "Rounded Mplus 1c Light";
   font-size: 22px;
   margin: 0 0 160px 0;
 }
-.from_zero_btn{
+
+.from_zero_btn {
   background-color: var(--button-bg);
   color: var(--button-text);
   width: 260px;
@@ -266,13 +345,15 @@ input[type='checkbox'] {
   max-width: 600px;
   margin: 0;
 }
-.from_zero_img{
+
+.from_zero_img {
   width: 100%;
 }
+
 /*                from_zero             */
 
 /*                premium             */
-.premium{
+.premium {
   max-width: 100%;
   margin-bottom: 190px;
 }
@@ -282,7 +363,8 @@ input[type='checkbox'] {
   font-family: "Brusnika";
   margin: 0 0 30px 0;
 }
-.premium_content{
+
+.premium_content {
   display: grid;
   grid-template-columns: repeat(2, 580px);
   column-gap: 30px;
@@ -291,7 +373,8 @@ input[type='checkbox'] {
   justify-content: center;
   margin: 0 auto 80px auto;
 }
-.premium_box{
+
+.premium_box {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -300,7 +383,8 @@ input[type='checkbox'] {
   max-width: 180px;
   margin: 0;
 }
-.premium_box_img{
+
+.premium_box_img {
   width: 100%;
 }
 .premium_box_text{
@@ -308,11 +392,13 @@ input[type='checkbox'] {
   margin: 0;
   max-width: 300px;
 }
-.premium_button{
+
+.premium_button {
   margin: 0 auto 0 auto;
   text-align: center;
 }
-.premium_btn{
+
+.premium_btn {
   background-color: var(--button-bg);
   color: var(--button-text);
   width: 260px;
@@ -327,7 +413,7 @@ input[type='checkbox'] {
 /*                premium             */
 
 /*                reviews             */
-.reviews{
+.reviews {
   max-width: 100%;
   margin-bottom: 190px;
 }
@@ -337,7 +423,8 @@ input[type='checkbox'] {
   font-family: "Brusnika";
   margin: 0 0 30px 0;
 }
-.reviews_content{
+
+.reviews_content {
   /* grid-template-columns: repeat(auto-fill, minmax(345px, 1fr)); */
   /* display: grid;
   grid-auto-flow: dense;
@@ -345,7 +432,7 @@ input[type='checkbox'] {
   grid-template-columns: repeat(4, 1fr); */
 
   width: 100%;
-  max-width: 1400px; 
+  max-width: 1400px;
   gap: 20px;
   column-count: 4;
 
@@ -355,6 +442,7 @@ input[type='checkbox'] {
   max-height: 5000px; 
   align-content: flex-start; */
 }
+
 .review {
   /* height: fit-content;
   grid-column: span 1;
@@ -375,9 +463,11 @@ input[type='checkbox'] {
   border: none;
   transition: transform 0.3s ease;
 }
-.review.green{
-background-color: var(--bg-color-one);
+
+.review.green {
+  background-color: var(--bg-color-one);
 }
+
 .review_text {
   font-size: 18px;
   color: var(--text-color);
@@ -387,7 +477,8 @@ background-color: var(--bg-color-one);
   word-break: break-word; /* Перенос длинных слов */
   margin: 0 0 30px 0;
 }
-.review_info{
+
+.review_info {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -396,9 +487,11 @@ background-color: var(--bg-color-one);
   max-width: 60px;
   margin: 0;
 }
-.review_img{
+
+.review_img {
   width: 100%;
 }
+
 .review_author {
   font-family: "Brusnika";
   font-size: 30px;
