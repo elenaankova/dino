@@ -249,19 +249,11 @@ input[type='checkbox'] {
   outline: 2px dashed var(--border-color-active); 
   outline-offset: 6px; 
 }
-
-.levels_btn.active {
-  border-radius: 10px;
-  outline: 3px dashed var(--border-color-active);
-  outline-offset: 6px;
-}
-
 .levels_info {
   display: flex;
   gap: 140px;
   transition: opacity 0.3s ease;
 }
-
 .levels_info_main {
   max-width: 660px;
 }
@@ -277,7 +269,6 @@ input[type='checkbox'] {
   font-size: 20px;
   margin: 0 0 90px 0;
 }
-
 .levels_info_btn {
   background-color: var(--button-bg);
   color: var(--button-text);
@@ -499,3 +490,594 @@ input[type='checkbox'] {
 }
 
 /*                reviews             */
+
+
+
+
+
+
+/*              адаптив            */
+@media (max-width: 1400px) {
+/*  header  */
+.header_content2 {
+  gap: 120px;
+}
+.banner {
+  height: 740px;
+}
+/*  header  */
+
+/*  banner  */
+.banner_image {
+  max-width: 720px;
+}
+.banner_flower {
+  width: 470px;
+}
+.banner_leaves {
+  max-width: 550px;
+  top: 50%;
+}
+/*  banner  */
+
+/*  application  */
+.appli_title {
+  font-size: 3.6vw;
+}
+.appli_content_paragraph {
+  font-size: 3.2vw;
+}
+.appli_content_paragraph p {
+  font-size: 17px;
+  margin: 0;
+}
+/*  application  */
+
+/*  levels  */
+.levels_title {
+  font-size: 3.6vw;
+}
+.levels_buttons {
+  gap: 50px;
+}
+.levels_btn {
+  height: 35px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+.levels_info_text {
+  font-size: 18px;
+  margin: 0 0 90px 0;
+}
+.levels_info_dop p {
+  font-size: 20px;
+  line-height: 270%;
+}
+.levels_info_btn {
+  width: 230px;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+/*  levels  */
+
+/*  from_zero  */
+.from_zero_title {
+  font-size: 3.6vw;
+  margin: 0 0 20px 0;
+}
+.from_zero_text {
+  font-size: 20px;
+  margin: 0 0 150px 0;
+}
+.from_zero_btn {
+  width: 230px;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.from_zero_image {
+  max-width: 520px;
+}
+/*  from_zero  */
+
+/*  premium  */
+.premium_title {
+  font-size: 3.6vw;
+}
+.premium_box_image {
+  max-width: 160px;
+}
+.premium_box_text {
+  font-size: 19px;
+  max-width: 280px;
+}
+.premium_content {
+  grid-template-columns: repeat(2, 520px);
+  column-gap: 20px;
+  row-gap: 40px;
+  margin: 0 auto 60px auto;
+}
+.premium_btn {
+  width: 230px;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+/*  premium  */
+
+/*  reviews  */
+.reviews_title {
+  font-size: 3.6vw;
+  margin: 0 0 20px 0;
+}
+.review {
+  padding: 27px 21px 20px 21px;
+  border-radius: 12px;
+}
+.review_text {
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+.review_image {
+  max-width: 45px;
+}
+.review_author {
+  font-size: 28px;
+}
+/*  reviews  */
+}
+
+
+@media (max-width: 1300px) {
+  /*  header  */
+.header_content2 {
+  gap: 120px;
+}
+/*  header  */
+
+/*  banner  */
+.banner_image {
+  max-width: 680px;
+}
+.banner_flower {
+  width: 440px;
+}
+.banner_leaves {
+  max-width: 510px;
+  top: 51%;
+}
+.banner_content {
+  top: 240px;
+  max-width: 550px;
+}
+.banner_content_text {
+  font-size: 2.6vw;
+  margin: 0 0 10px 0;
+}
+.banner_content_tagline {
+  font-size: 18px;
+  margin: 0 0 80px 0;
+}
+.banner_content_btn {
+  width: 230px;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+/*  banner  */
+
+/*  levels  */
+.levels_buttons {
+  margin-bottom: 40px;
+}
+.levels_btn {
+  font-size: 18px;
+}
+.levels_btn.active{
+  border-radius: 8px;
+  outline-offset: 4px; 
+}
+.levels_btn:hover {
+  border-radius: 8px;
+  outline-offset: 4px;            
+}
+.levels_info_main {
+  max-width: 580px;
+}
+.levels_info_text {
+  font-size: 17px;
+}
+.levels_info_dop p {
+  font-size: 19px;
+}
+/*  levels  */
+
+/*  from_zero  */
+.from_zero_text {
+  font-size: 18px;
+  margin: 0 0 140px 0;
+  max-width: 540px;
+}
+.from_zero_image {
+  max-width: 500px;
+}
+/*  from_zero  */
+
+}
+
+
+@media (max-width: 1200px) {
+/*  banner  */
+.banner_image {
+  max-width: 650px;
+}
+.banner_flower {
+  width: 420px;
+}
+.banner_leaves {
+  max-width: 480px;
+  top: 52%;
+}
+.banner_content {
+  max-width: 480px;
+}
+.banner_content_btn {
+  height: 32px;
+  font-size: 16px;
+}
+/*  banner  */
+
+/*  application  */
+.appli_title {
+  font-size: 4.0vw;
+}
+.appli_content_paragraph {
+  font-size: 3.5vw;
+}
+.appli_content_paragraph p {
+  font-size: 16px;
+}
+/*  application  */
+
+/*  levels  */
+.levels_title {
+  font-size: 4.0vw;
+}
+.levels_btn {
+  height: 32px;
+  font-size: 16px;
+}
+.levels_info_title {
+  font-size: 38px;
+}
+.levels_info_text {
+  font-size: 16px;
+  margin: 0 0 70px 0;
+}
+.levels_info {
+  gap: 100px;
+}
+.levels_info_dop p {
+  font-size: 18px;
+}
+.levels_info_btn {
+  height: 32px;
+  font-size: 16px;
+}
+/*  levels  */
+
+/*  from_zero  */
+.from_zero_title {
+  font-size: 4.0vw;
+}
+.from_zero_text {
+  font-size: 16px;
+  /* margin: 0 0 140px 0; */
+}
+.from_zero_btn {
+  height: 32px;
+  font-size: 16px;
+}
+.from_zero_image {
+  max-width: 450px;
+}
+/*  from_zero  */
+
+/*  from_zero  */
+.premium_title {
+  font-size: 4.0vw;
+}
+.premium_content {
+  grid-template-columns: repeat(2, 480px);
+}
+.premium_box_image {
+  max-width: 140px;
+}
+.premium_box_text {
+  font-size: 17px;
+  max-width: 250px;
+}
+.premium_btn {
+  height: 32px;
+  font-size: 16px;
+}
+/*  from_zero  */
+
+/*  reviews  */
+.reviews_title {
+  font-size: 4.0vw;
+}
+.review_text {
+  font-size: 15px;
+}
+.review_info {
+  gap: 15px;
+}
+.review_image {
+  max-width: 40px;
+}
+.review_author {
+  font-size: 26px;
+}
+/*  reviews  */
+}
+
+
+@media (max-width: 1100px) {
+/*  header  */
+.header_content2 {
+  gap: 100px;
+}
+/*  header  */
+
+/*  banner  */
+.banner_image {
+  max-width: 610px;
+}
+.banner_flower {
+  width: 400px;
+}
+.banner_leaves {
+  max-width: 450px;
+  top: 52%;
+}
+.banner_content {
+  max-width: 410px;
+}
+/*  banner  */
+
+/*  application  */
+.appli_content {
+  grid-template-columns: repeat(2, 350px);
+}
+.appli_content_paragraph p {
+  font-size: 15px;
+}
+/*  application  */
+
+/*  levels  */
+.levels_info_main {
+  max-width: 490px;
+}
+.levels_info_dop {
+  max-width: 400px;
+}
+.levels_info_dop p {
+  font-size: 17px;
+}
+/*  levels  */
+
+/*  from_zero  */
+.from_zero_main {
+  max-width: 500px;
+}
+.from_zero_text {
+  margin: 0 0 130px 0;
+}
+.from_zero_image {
+  max-width: 410px;
+}
+/*  from_zero  */
+
+/*  premium  */
+.premium_content {
+  grid-template-columns: repeat(2, 400px);
+}
+/*  premium  */
+
+/*  reviews  */
+.reviews_content {
+  gap: 10px;
+}
+.review {
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+/*  reviews  */
+}
+
+
+@media (max-width: 1000px) {
+/*  header  */
+.header_content2 {
+  gap: 50px;
+}
+/*  header  */
+
+/*  banner  */
+.banner {
+  height: 620px;
+}
+.banner_image {
+  max-width: 570px;
+}
+.banner_flower {
+  width: 370px;
+}
+.banner_leaves {
+  max-width: 410px;
+  top: 54%;
+}
+.banner_content {
+  top: 220px;
+  max-width: 360px;
+}
+.banner_content_text {
+  font-size: 2.9vw;
+}
+.banner_content_tagline {
+  font-size: 16px;
+  margin: 0 0 70px 0;
+}
+.banner_content_btn {
+  height: 30px;
+  width: 210px;
+}
+/*  banner  */
+
+/*  application  */
+.appli_content {
+  grid-template-columns: repeat(2, 320px);
+}
+.appli_title {
+  font-size: 4.4vw;
+  margin: 0 0 20px 0;
+}
+.appli_content_paragraph {
+  font-size: 3.9vw;
+}
+/*  application  */
+
+/*  levels  */
+.levels_title {
+  font-size: 4.4vw;
+  margin: 0 0 20px 0;
+}
+.levels_btn {
+  height: 30px;
+  width: 190px;
+}
+.levels_info_main {
+  max-width: 430px;
+}
+.levels_info_text {
+  font-size: 15px;
+  margin: 0 0 70px 0;
+}
+.levels_info_btn  {
+  height: 30px;
+  width: 210px;
+}
+.levels_info_dop p {
+  font-size: 16px;
+  line-height: 260%;
+}
+/*  levels  */
+
+/*  from_zero  */
+.from_zero {
+  margin-bottom: 90px;
+}
+.from_zero_main {
+  max-width: 430px;
+}
+.from_zero_title {
+  font-size: 4.4vw;
+}
+.from_zero_text {
+  font-size: 15px;
+  margin: 0 0 100px 0;
+}
+.from_zero_btn  {
+  height: 30px;
+  width: 210px;
+}
+.from_zero_image {
+  max-width: 390px;
+}
+/*  from_zero  */
+
+/*  premium  */
+.premium_title {
+  font-size: 4.4vw;
+  margin: 0 0 20px 0;
+}
+.premium_content {
+  grid-template-columns: repeat(2, 370px);
+  row-gap: 20px;
+  margin: 0 auto 50px auto;
+}
+.premium_box {
+  gap: 20px;
+}
+.premium_box_image {
+  max-width: 125px;
+}
+.premium_box_text {
+  font-size: 16px;
+}
+.premium_button  {
+  height: 30px;
+  width: 210px;
+}
+/*  premium  */
+
+/*  reviews  */
+.reviews_title {
+  font-size: 4.4vw;
+}
+.review {
+  padding: 20px 15px 18px 15px;
+}
+.review_text {
+  font-size: 14px;
+}
+.review_image {
+  max-width: 36px;
+}
+.review_author {
+  font-size: 24px;
+}
+/*  reviews  */
+}
+
+
+@media (max-width: 900px) {
+/*  header  */
+.header_content2 {
+  gap: 50px;
+}
+/*  header  */
+
+/*  banner  */
+.banner {
+  height: 620px;
+}
+.banner_image {
+  max-width: 570px;
+}
+.banner_flower {
+  width: 370px;
+}
+.banner_leaves {
+  max-width: 410px;
+  top: 54%;
+}
+.banner_content {
+  top: 220px;
+  max-width: 360px;
+}
+.banner_content_text {
+  font-size: 2.9vw;
+}
+.banner_content_tagline {
+  font-size: 16px;
+  margin: 0 0 70px 0;
+}
+.banner_content_btn {
+  height: 30px;
+  width: 210px;
+}
+/*  banner  */
+}
