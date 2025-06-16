@@ -2,17 +2,21 @@
   font-family: "Brusnika";
   src: url("../fonts/Brusnika.otf");
 }
+
 @font-face {
   font-family: "Rounded Mplus 1c";
   src: url("../fonts/MPLUSRounded1c-Regular.ttf");
 }
+
 @font-face {
   font-family: "Rounded Mplus 1c Light";
   src: url("../fonts/MPLUSRounded1c-Light.ttf");
 }
+
 html {
   overflow-x: hidden;
 }
+
 body {
   max-width: 1440px;
   margin: 0 auto 0 auto;
@@ -22,14 +26,17 @@ body {
   position: relative;
   padding: 0 20px;
 }
+
 a {
   color: var(--text-color);
   text-decoration: none;
 }
+
 hr {
   height: 1px;
   background-color: var(--border-color);
 }
+
 input[type='checkbox'] {
   width: 30px;
   /* background-color: #B0206B; */
@@ -57,20 +64,24 @@ input[type='checkbox'] {
 
 
 /*               section crumbs_and_btn             */
-.crumbs_and_btn{
+.crumbs_and_btn {
   margin-top: 60px;
   margin-bottom: 150px;
   display: flex;
   justify-content: space-between;
 }
-.crumbs_content a{
+
+.crumbs_content a {
   font-size: 15px;
 }
 
-.language{
-   margin-left: 500px;
+.language {
+  justify-content: space-between;
+  display: flex;
+  gap: 40px;
 }
-.language_select{
+
+.language_select {
   background-color: var(--bg-color-three);
   color: var(--button-text);
   width: 260px;
@@ -80,10 +91,11 @@ input[type='checkbox'] {
   font-family: "Rounded Mplus 1c Light";
   border: none;
   border-radius: 6px;
-  cursor: pointer; 
+  cursor: pointer;
+  display: flex;
 }
 
-.premium_btn{
+.premium_btn {
   background-color: var(--button-bg);
   color: var(--button-text);
   width: 260px;
@@ -98,35 +110,40 @@ input[type='checkbox'] {
 /*               section crumbs_and_btn             */
 
 /*               section your_level             */
-.your_level{
+.your_level {
   max-width: 100%;
   margin-bottom: 80px;
 }
-.your_level_title{
+
+.your_level_title {
   font-size: 2.6vw;
   font-weight: normal;
   text-align: center;
   font-family: "Brusnika";
   margin: 0 0 10px 0;
 }
-.your_level_content{
+
+.your_level_content {
   background-color: var(--bg-color-two);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 4px 20px;
 }
-.triangle_btn{
+
+.triangle_btn {
   background-color: var(--bg-color-two);
   border: none;
   cursor: pointer;
 }
+
 .level-triangle-left {
   width: 35px;
   height: 35px;
   background-color: var(--button-bg-two);
   clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
 }
+
 .level-triangle-right {
   width: 35px;
   height: 35px;
@@ -135,19 +152,21 @@ input[type='checkbox'] {
 }
 
 
-.your_levels_conteiner{
+.your_levels_conteiner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 35px;
 }
+
 .your_levels_shape {
   position: relative;
   width: 240px;
   height: 30px;
-  background: var(--bg-color-one); 
+  background: var(--bg-color-one);
   margin: 0;
 }
+
 /* Втянутый треугольник слева */
 .your_levels_shape::before {
   content: "";
@@ -161,67 +180,76 @@ input[type='checkbox'] {
   border-left: 20px solid var(--bg-color-two);
   z-index: 1;
 }
+
 /* Выпуклый треугольник справа */
 .your_levels_shape::after {
   content: "";
   position: absolute;
   top: 0;
-  right: -20px; /* смещаем правее */
+  right: -19px;
+  /* смещаем правее */
   width: 0;
   height: 0;
   border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 20px solid var(--bg-color-one); 
+  border-bottom: 16px solid transparent;
+  border-left: 21px solid var(--bg-color-one);
   z-index: 2;
 }
 
 .your_levels_shape.active {
   background: var(--bg-color-three);
 }
+
 .your_levels_shape.active::after {
-  border-left: 20px solid var(--bg-color-three); 
+  border-left: 20px solid var(--bg-color-three);
 }
 
-.your_levels_shape p{
+.your_levels_shape p {
   text-align: center;
   align-items: center;
   font-size: 18px;
   margin: auto;
 }
+
 /*               section your_level             */
 
 
 
 /*               section your_stage             */
-.your_stage{
+.your_stage {
   max-width: 100%;
   margin-bottom: 120px;
 }
-.your_stage_title{
+
+.your_stage_title {
   font-size: 2.6vw;
   font-weight: normal;
   text-align: center;
   font-family: "Brusnika";
   margin: 0 0 10px 0;
 }
-.your_stage_content{
+
+.your_stage_content {
   background-color: var(--bg-color-two);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 6px 15px;
 }
-.triangle_btn{
+
+.triangle_btn {
   background-color: var(--bg-color-two);
   border: none;
   cursor: pointer;
 }
+
 .stage-triangle-left {
   width: 40px;
   height: 40px;
   background-color: var(--button-bg-two);
   clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
 }
+
 .stage-triangle-right {
   width: 40px;
   height: 40px;
@@ -230,19 +258,21 @@ input[type='checkbox'] {
 }
 
 
-.your_stages_conteiner{
+.your_stages_conteiner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 45px;
 }
+
 .your_stages_shape {
   position: relative;
   width: 240px;
   height: 36px;
-  background: var(--bg-color-one); 
+  background: var(--bg-color-one);
   margin: 0;
 }
+
 /* Втянутый треугольник слева */
 .your_stages_shape::before {
   content: "";
@@ -256,28 +286,31 @@ input[type='checkbox'] {
   border-left: 20px solid var(--bg-color-two);
   z-index: 1;
 }
+
 /* Выпуклый треугольник справа */
 .your_stages_shape::after {
   content: "";
   position: absolute;
   top: 0;
-  right: -20px; /* смещаем правее */
+  right: -20px;
+  /* смещаем правее */
   width: 0;
   height: 0;
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
-  border-left: 20px solid var(--bg-color-one); 
+  border-left: 20px solid var(--bg-color-one);
   z-index: 2;
 }
 
 .your_stages_shape.active {
   background: var(--bg-color-three);
 }
+
 .your_stages_shape.active::after {
-  border-left: 20px solid var(--bg-color-three); 
+  border-left: 21px solid var(--bg-color-three);
 }
 
-.your_stages_shape p{
+.your_stages_shape p {
   /* align-items: center; */
   display: flex;
   justify-content: center;
@@ -285,116 +318,431 @@ input[type='checkbox'] {
   font-size: 22px;
   margin: auto;
 }
+
 /*               section your_stage             */
 
 
 /*               section lesson             */
-.lesson{
+.lesson {
   max-width: 100%;
   margin-bottom: 150px;
 }
-.lesson_title{
+
+.lesson_title {
   font-size: 3.0vw;
   font-weight: normal;
   text-align: center;
   font-family: "Brusnika";
-  margin: 0 ;
+  margin: 0;
 }
 
 .lesson_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 800px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
 }
 
 
 .circle {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: var(--bg-color-one);
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    font-weight: bold;
-    position: relative;
-    z-index: 10;
-    margin: 30px 0;
-    cursor: pointer;
-    border: none;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: var(--bg-color-one);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  z-index: 100;
+  margin: 30px 0;
+  cursor: pointer;
+  border: none;
 }
+
 /* .circle.start, .circle.end {
     width: 160px;
     height: 160px;
 } */
 .circle.active {
-    background: var(--bg-color-three);
+  background: var(--bg-color-three);
 }
 
 
 /* Вертикальные пунктирные линии */
 .circle::after {
-    content: '';
-    position: absolute;
-    background-image: linear-gradient(to bottom, 
-        var(--bg-color-one) 50%, 
-        transparent 50%);
-    background-size: 4px 15px;
-    width: 4px;
-    height: 100px; /* Длина линии */
-    top: -100px; /* Позиция над кругом */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -10;
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(to bottom,
+      var(--bg-color-one) 50%,
+      transparent 50%);
+  background-size: 4px 15px;
+  width: 4px;
+  height: 100px;
+  /* Длина линии */
+  top: -100px;
+  /* Позиция над кругом */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
 }
 
 /* Горизонтальные пунктирные линии для змейки */
 .circle:nth-child(even)::before,
 .circle:nth-child(odd):not(:first-child)::before {
-    content: '';
-    position: absolute;
-    background-image: linear-gradient(to right, 
-        var(--bg-color-one) 50%, 
-        transparent 50%);
-    background-size: 15px 4px;
-    /* width: 100px; */
-    height: 4px;
-    top: -100px;
-    z-index: -10;
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(to right,
+      var(--bg-color-one) 50%,
+      transparent 50%);
+  background-size: 15px 4px;
+  /* width: 100px; */
+  height: 4px;
+  top: -100px;
+  z-index: -10;
 }
 
 /* Для четных кругов (справа) */
 .circle:nth-child(even) {
-     align-self: flex-end;
-    /* margin-right: 150px; */
+  align-self: flex-end;
+  /* margin-right: 150px; */
 }
 
 .circle:nth-child(even)::before {
-     width: calc(600px + 60px);
-    right: 50%;
+  width: calc(600px + 60px);
+  right: 50%;
 }
 
 /* Для нечетных кругов (слева) */
-.circle:nth-child(odd){
-   align-self: flex-start;
-    /* margin-left: 150px; */
+.circle:nth-child(odd) {
+  align-self: flex-start;
+  /* margin-left: 150px; */
 }
 
 .circle:nth-child(odd):not(:first-child)::before {
-   width: calc(600px + 60px);
-    left: 50%;
+  width: calc(600px + 60px);
+  left: 50%;
 }
 
 /* Убираем линии у первого круга */
 .circle:first-child::after,
 .circle:first-child::before {
-    display: none;
+  display: none;
 }
 
 /*               section lesson             */
+
+
+
+@media (max-width: 1300px) {
+
+  .your_level_title,
+  .your_stage_title,
+  .lesson_title {
+    font-size: 3.5vw;
+  }
+
+  .your_levels_shape::after {
+    right: -19px;
+  }
+
+  .your_levels_shape {
+    position: relative;
+    width: 180px;
+    height: 30px;
+    background: var(--bg-color-one);
+    margin: 0;
+  }
+
+  .level-triangle-right,
+  .level-triangle-left,
+  .stage-triangle-right,
+  .stage-triangle-left {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+@media (max-width: 1050px) {
+
+  .your_level_title,
+  .your_stage_title,
+  .lesson_title {
+    font-size: 4.6vw;
+  }
+
+  .your_level {
+    margin-bottom: 40px;
+  }
+
+  .your_level_content,
+  .your_stage_content {
+    padding: 4px 5px;
+  }
+
+  .your_stages_shape {
+    position: relative;
+    width: 200px;
+    height: 36px;
+  }
+
+  .your_levels_conteiner {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 950px) {
+  .language {
+    gap: 20px;
+  }
+
+  .language_select,
+  .premium_btn {
+    width: 200px;
+    font-size: 18px;
+  }
+
+
+  .your_level_content,
+  .your_stage_content {
+    position: relative;
+    overflow: hidden;
+    padding: 4px 50px;
+  }
+
+  .your_levels_conteiner,
+  .your_stages_conteiner {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease;
+    gap: 0;
+    transform: translateX(0);
+  }
+
+  .your_levels_shape,
+  .your_stages_shape {
+    flex: 0 0 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    transform: none !important;
+    margin: 0;
+  }
+
+  /* Скрываем только треугольники у уровней, но оставляем для этапов */
+  .your_levels_shape::before,
+  .your_levels_shape::after {
+    display: none;
+  }
+
+  /* Стили для кнопок обоих слайдеров */
+  .your_level_content .triangle_btn,
+  .your_stage_content .triangle_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+  }
+
+  .your_level_content .triangle_btn:first-child,
+  .your_stage_content .triangle_btn:first-child {
+    left: 5px;
+  }
+
+  .your_level_content .triangle_btn:last-child,
+  .your_stage_content .triangle_btn:last-child {
+    right: 5px;
+  }
+
+  /* Стили для треугольников этапов */
+  .stage-triangle-left,
+  .stage-triangle-right {
+    width: 25px;
+    height: 25px;
+    display: block !important;
+    /* Важно: принудительно отображаем */
+  }
+
+  /* Дополнительные стили для этапов */
+  .your_stages_shape::before,
+  .your_stages_shape::after {
+    display: none;
+    /* Скрываем только для мобильной версии */
+  }
+}
+
+@media (max-width: 850px) {
+
+  .circle:nth-child(even)::before,
+  .circle:nth-child(odd):not(:first-child)::before {
+    width: calc(520px + 40px);
+    right: 50%;
+  }
+
+  .circle::after {
+    height: 70px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .language {
+    display: grid;
+    grid-row: 30px;
+  }
+
+  .crumbs_and_btn {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .your_level_title,
+  .your_stage_title,
+  .lesson_title {
+    font-size: 5.4vw;
+  }
+
+  .your_stage {
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .circle:nth-child(even)::before,
+  .circle:nth-child(odd):not(:first-child)::before {
+    width: calc(450px + 40px);
+    right: 50%;
+  }
+
+  .circle::after {
+    height: 70px;
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+    margin: 15px 0;
+  }
+
+  .circle:nth-child(even)::before,
+  .circle:nth-child(odd):not(:first-child)::before {
+    height: 3px;
+    top: -70px;
+  }
+
+  .circle::after {
+    height: 40px;
+  }
+
+  .circle::after {
+    background-size: 4px 15px;
+    width: 3px;
+    height: 50px;
+    top: -70px;
+    left: 50%;
+  }
+}
+
+@media (max-width: 660px) {
+
+  .circle:nth-child(even)::before,
+  .circle:nth-child(odd):not(:first-child)::before {
+    width: calc(390px + 40px);
+    right: 50%;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+  .crumbs_content {
+    display: none;
+  }
+
+  .language_select,
+  .premium_btn {
+    width: 180px;
+    font-size: 16px;
+  }
+
+  .language {
+    gap: 30px;
+    display: flex;
+  }
+
+  .crumbs_and_btn {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .your_level_title,
+  .your_stage_title,
+  .lesson_title {
+    font-size: 7.5vw;
+  }
+
+
+
+  .circle:nth-child(even)::before,
+  .circle:nth-child(odd):not(:first-child)::before {
+    width: calc(340px + 0px);
+    right: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .circle:nth-child(even)::before,
+  .circle:nth-child(odd):not(:first-child)::before {
+    width: calc(290px + 0px);
+    right: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .language {
+    display: grid;
+  }
+
+  .crumbs_and_btn {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .your_level {
+    margin-bottom: 30px;
+  }
+
+  .your_level_title,
+  .your_stage_title,
+  .lesson_title {
+    font-size: 9.5vw;
+  }
+
+  .lesson_title {
+    margin-bottom: 20px;
+  }
+
+  .circle:nth-child(even)::before,
+  .circle:nth-child(odd):not(:first-child)::before {
+    width: calc(235px + 0px);
+    right: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .circle:nth-child(even)::before,
+  .circle:nth-child(odd):not(:first-child)::before {
+    width: calc(195px + 0px);
+    right: 50%;
+  }  
+}

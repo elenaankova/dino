@@ -2,17 +2,21 @@
   font-family: "Brusnika";
   src: url("../fonts/Brusnika.otf");
 }
+
 @font-face {
   font-family: "Rounded Mplus 1c";
   src: url("../fonts/MPLUSRounded1c-Regular.ttf");
 }
+
 @font-face {
   font-family: "Rounded Mplus 1c Light";
   src: url("../fonts/MPLUSRounded1c-Light.ttf");
 }
+
 html {
   overflow-x: hidden;
 }
+
 body {
   max-width: 1440px;
   margin: 0 auto 0 auto;
@@ -22,14 +26,17 @@ body {
   position: relative;
   padding: 0 20px;
 }
+
 a {
   color: var(--text-color);
   text-decoration: none;
 }
+
 hr {
   height: 1px;
   background-color: var(--border-color);
 }
+
 input[type='checkbox'] {
   width: 30px;
   /* background-color: #B0206B; */
@@ -54,92 +61,110 @@ input[type='checkbox'] {
 }
 
 /*                profile             */
-.profile{
-  width: 100vw;
+.profile {
+  padding: 20px 30px;
+  width: 100%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--bg-color-two);
 }
-.profile_content{
+
+.profile_content {
   max-width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
   padding: 50px 0 10px 0;
   gap: 30px;
   /* align-items: baseline; */
 }
-.profile_image{
-    max-width: 100px;
+
+.profile_image {
+  max-width: 100px;
 }
-.profile_img{
-    width: 100%;
+
+.profile_img {
+  width: 100%;
 }
-.profile_name_user{
-    font-size: 20px;
-    margin: 60px 0 0 0;
-    max-height: 30px;
+
+.profile_name_user {
+  font-size: 20px;
+  margin: 60px 0 0 0;
+  max-height: 30px;
 }
-.profile_settings{
-    background-color: var(--bg-color-two);
-    border: none;
-    max-height: 35px;
-    max-width: 35px;
-    margin: 60px 0 0 0;
-    cursor: pointer;
+
+.profile_settings {
+  background-color: var(--bg-color-two);
+  border: none;
+  max-height: 35px;
+  max-width: 35px;
+  margin: 60px 0 0 0;
+  cursor: pointer;
 }
-.profile_settings_img{
-    width: 100%;
+
+.profile_settings_img {
+  width: 100%;
 }
 
 /*                profile             */
 
 /*         modal_profile_settings        */
-.modal_profile_settings{
+.modal_profile_settings {
   display: none;
   width: 400px;
-  position: fixed; 
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10; 
+  z-index: 10;
   /* animation: fadeIn 0.3s; */
 }
-.modal_conent{
+
+.modal_conent {
   padding: 20px 30px;
   background-color: var(--bg-color-one);
   border: 2px solid var(--bg-color-three);
 }
-.modal_conent h1{
+
+.modal_conent h1 {
   font-size: 24px;
   margin: 0 0 30px 0;
 }
-.modal_avatar_title{
+
+.modal_avatar_title {
   font-size: 16px;
   margin: 0 0 10px 0;
 }
-.modal_avatar{
+
+.modal_avatar {
   max-width: 100px;
 }
-.modal_avatar_img{
+
+.modal_avatar_img {
   width: 100%;
 }
-.modal_avatar_change{
+
+.modal_avatar_change {
   margin: 5px 0 30px 0;
 }
-.modal_name{
+
+.modal_name {
   display: flex;
   align-items: baseline;
   margin-bottom: 40px;
 }
-.modal_name p{
+
+.modal_name p {
   font-size: 16px;
   margin: 0 10px 0 0;
 }
-.modal_name_user{
+
+.modal_name_user {
   height: 25px;
 }
-.modal_back, .modal_change{
+
+.modal_back,
+.modal_change {
   background-color: var(--bg-color-three);
   color: var(--fon);
   width: 160px;
@@ -152,11 +177,12 @@ input[type='checkbox'] {
 /*                modal_profile_settings             */
 
 /*                menu             */
-.menu{
+.menu {
   max-width: 100%;
   margin-bottom: 60px;
 }
-.menu_content{
+
+.menu_content {
   max-width: 800px;
   margin: 0 auto;
   background-color: var(--bg-color-one);
@@ -164,12 +190,16 @@ input[type='checkbox'] {
   flex-direction: row;
   justify-content: space-between;
 }
-.menu_progress, .menu_rocky{
+
+.menu_progress,
+.menu_rocky {
   width: 240px;
   height: 36px;
   background-color: var(--button-bg);
 }
-.menu_progress_btn, .menu_rocky_btn{
+
+.menu_progress_btn,
+.menu_rocky_btn {
   width: 100%;
   background-color: var(--button-bg);
   border: none;
@@ -179,12 +209,14 @@ input[type='checkbox'] {
   font-family: "Rounded Mplus 1c Light";
   cursor: pointer;
 }
-.menu_achiev{
+
+.menu_achiev {
   width: 270px;
   height: 55px;
   background-color: var(--button-bg);
 }
-.menu_achiev p{
+
+.menu_achiev p {
   width: 100%;
   background-color: var(--button-bg);
   border: none;
@@ -200,25 +232,29 @@ input[type='checkbox'] {
 
 
 /*               section crumbs             */
-.crumbs{
+.crumbs {
   margin-bottom: 60px;
 }
-.crumbs a{
+
+.crumbs a {
   font-size: 15px;
 }
+
 /*               section crumbs             */
 
 
 /*               section shop             */
-.achievements{
+.achievements {
   max-width: 100%;
   margin-bottom: 150px;
 }
-.achievements_content{
+
+.achievements_content {
   max-width: 920px;
   margin: 0 auto;
 }
-.achievements_cards{
+
+.achievements_cards {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -226,7 +262,7 @@ input[type='checkbox'] {
   row-gap: 20px;
 }
 
-.achievements_card{
+.achievements_card {
   max-width: 280px;
   background-color: var(--bg-color-one);
   display: flex;
@@ -234,7 +270,8 @@ input[type='checkbox'] {
   align-items: center;
   padding: 15px;
 }
-.achievements_card.noactive{
+
+.achievements_card.noactive {
   max-width: 280px;
   background-color: var(--bg-color-one);
   display: flex;
@@ -244,56 +281,69 @@ input[type='checkbox'] {
   position: relative;
   overflow: hidden;
 }
+
 .achievements_card.noactive::after {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(80, 80, 80, 0.5); 
-  pointer-events: none; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(80, 80, 80, 0.5);
+  pointer-events: none;
   z-index: 1;
 }
-.achievements_card_image{
+
+.achievements_card_image {
   /* max-width: 150px; */
   margin-bottom: 10px;
   padding: 30px;
   background-color: var(--bg-color-two);
 }
-.achievements_card_img{
+
+.achievements_card_img {
   width: 100%;
 }
-.achievements_card_info{
+
+.achievements_card_info {
   margin: 0;
   padding: 0 10px;
   text-align: center;
   /* background-color: var(--bg-color-one); */
 }
-.achievements_card_info_name{
+
+.achievements_card_info_name {
   margin: 0;
   font-size: 18px;
 }
-.achievements_card_info_text{
+
+.achievements_card_info_text {
   margin: 10px 0 0 0;
   font-size: 14px;
 }
-.achievements_card_info_date{
+
+.achievements_card_info_date {
   margin: 30px 0 0 0;
   font-size: 15px;
 }
+
 /*               section shop             */
 
 
 /*                premium             */
-.premium{
+.premium {
   max-width: 100%;
   margin-bottom: 190px;
 }
-.premium_title{
+
+.premium_title {
   font-size: 3.0vw;
   font-weight: normal;
   font-family: "Brusnika";
   margin: 0 0 30px 0;
 }
-.premium_content{
+
+.premium_content {
   display: grid;
   grid-template-columns: repeat(2, 580px);
   column-gap: 30px;
@@ -302,28 +352,34 @@ input[type='checkbox'] {
   justify-content: center;
   margin: 0 auto 80px auto;
 }
-.premium_box{
+
+.premium_box {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.premium_box_image{
+
+.premium_box_image {
   max-width: 180px;
   margin: 0;
 }
-.premium_box_img{
+
+.premium_box_img {
   width: 100%;
 }
-.premium_box_text{
+
+.premium_box_text {
   font-size: 20px;
   margin: 0;
   max-width: 300px;
 }
-.premium_button{
+
+.premium_button {
   margin: 0 auto 0 auto;
   text-align: center;
 }
-.premium_btn{
+
+.premium_btn {
   background-color: var(--button-bg);
   color: var(--button-text);
   width: 260px;
@@ -336,3 +392,160 @@ input[type='checkbox'] {
 }
 
 /*                premium             */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+  .menu_rocky,
+  .menu_progress {
+    width: 200px;
+  }
+
+  .menu_achiev {
+    width: 230px;
+    height: 55px;
+    background-color: var(--button-bg);
+  }
+
+
+
+
+  .achievements_card_info_date {
+    margin: 15px 0 0 0;
+    font-size: 15px;
+}
+.achievements_card_image {
+
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.achievements_card {
+    max-width: 280px;
+    padding: 5px;
+}
+}
+
+
+@media (max-width: 700px) {
+.profile_content {
+    padding: 20px 0 10px 0;
+    gap: 17px;
+    /* align-items: baseline; */
+}
+.profile_image {
+    max-width: 90px;
+}
+
+
+
+  .menu_rocky,
+  .menu_progress {
+    width: 120px;
+  }
+
+  .menu_achiev p {
+    padding: 9px 0;
+    font-size: 20px;
+  }
+.menu_progress_btn, .menu_rocky_btn {
+    padding: 6px 0;
+    font-size: 16px;
+    color: var(--fon);
+    font-family: "Rounded Mplus 1c Light";
+    cursor: pointer;
+}
+  .menu_achiev {
+    width: 170px;
+    height: 45px;
+    background-color: var(--button-bg);
+  }
+
+
+
+  .crumbs {
+    display: none;
+}
+
+
+
+
+.achievements_card_info {
+    margin: 0;
+    padding: 0 5px;
+}
+.achievements_cards {
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 20px;
+    row-gap: 15px;
+}
+}
+
+
+@media (max-width: 500px){
+    .achievements_card_image {
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    .achievements_card_info_name {
+    margin: 0;
+    font-size: 14px;
+}
+    .achievements_card_info_date {
+        margin: 5px 0 0 0;
+        font-size: 12px;
+    }
+    .achievements_card_info_text {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+}
+}
+
+@media (max-width: 400px){
+.profile_name_user {
+    font-size: 18px;
+    margin: 60px 0 0 0;
+    max-height: 30px;
+}
+    .profile_image {
+        max-width: 80px;
+    }
+
+
+
+
+
+
+
+.achievements_cards {
+    grid-template-columns: repeat(1, 3fr);
+    row-gap: 15px;
+}
+    .achievements_card {
+      margin: 0 auto;
+    }
+        .achievements_card_info_name {
+    margin: 0;
+    font-size: 20px;
+}
+    .achievements_card_info_date {
+        margin: 5px 0 0 0;
+        font-size: 14px;
+    }
+    .achievements_card_info_text {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+}
+}
