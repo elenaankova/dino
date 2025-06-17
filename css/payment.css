@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "Brusnika";
+    src: url("../fonts/Brusnika.otf");
+}
+
+@font-face {
+    font-family: "Rounded Mplus 1c";
+    src: url("../fonts/MPLUSRounded1c-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Rounded Mplus 1c Light";
+    src: url("../fonts/MPLUSRounded1c-Light.ttf");
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
+    background-color: var(--fon);
+    color: var(--text-color);
+    font-family: "Rounded Mplus 1c";
+    position: relative;
+    padding: 0 20px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+hr {
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+input[type='checkbox'] {
+    width: 30px;
+    /* background-color: #B0206B; */
+    border: none;
+}
+
+:root {
+    /* Светлая тема (по умолчанию) */
+    --fon: #FAFFFB;
+    --text-color: #12321A;
+    --button-bg: #6A9929;
+    --button-text: #FAFFFB;
+    --button-bg-active: #A0B297;
+    --border-color-active: #A0B297;
+    --bg-color-one: #D6E2CC;
+    --bg-color-two: #F4EFE2;
+    --bg-color-three: #A0B297;
+
+    /* --header-bg: #fff; */
+    /* --card-bg: #fff; */
+    /* --border-color: #410e28; */
+    /* --chekbox: #EDC6D1; */
+}
+
+
+
+
+/*               section crumbs             */
+.crumbs {
+    margin-top: 60px;
+}
+
+.crumbs a {
+    font-size: 15px;
+}
+
+/*               section crumbs             */
+
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 25px 0 15px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.card-number {
+    letter-spacing: 2px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.row>div {
+    flex: 1;
+}
+
+.country-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 30px 0;
+}
+
+.plan {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.plan-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.benefits {
+    margin: 20px 0;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+.benefits li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.terms {
+    font-size: 12px;
+    color: #777;
+    margin-top: 30px;
+    line-height: 1.5;
+}

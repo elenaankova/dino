@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header_footer.css">
-    <link rel="stylesheet" href="../css/pet.css">
-    <title>Ваш Рокки</title>
+    <link rel="stylesheet" href="../css/payment.css">
+    <title>Оформление покупки</title>
 </head>
 
 <body>
@@ -47,74 +47,75 @@
         </div>
     </nav>
 
-    <section class="pet">
-        <div class="pet_rocky_image">
-            <img class="pet_rocky_img" src="../image/pet/дино в покое.png" alt="">
-        </div>
-        <div class="pet_fon_image">
-            <img class="pet_fon_img" src="../image/pet/fon.jpg" alt="">
-        </div>
-    </section>
-
-    <section class="feed">
-        <div class="feed_button">
-            <button class="feed_btn">Покормить</button>
-        </div>
-        <div class="feed_info">
-            <span>2</span>
-            <p>Еда(ы) для питомца</p>
-            <a href="">Заработать ещё</a>
-        </div>
-    </section>
-
     <section class="crumbs">
-            <a href="">Главная страница -> </a><a href="">Профиль -> </a><a href="">Рокки</a>
+        <a href="home.html">Главная страница -> </a><a href="premium.html">Премиум -> </a><a href="">Оформление
+            покупки</a>
     </section>
-    
-    <section class="shop">
-        <h1 class="shop_title">Магазин</h1>
-        <div class="shop_buttons">
-            <button class="shop_btn active">Бесплатной</button>
-            <button class="shop_btn">Премиум</button>
+
+
+    <section>
+        <h1>Кредитная или дебитовая карта</h1>
+
+        <div class="form-group">
+            <h2>Полное имя (как указано на вашей карте)</h2>
+            <input type="text" placeholder="Введите свое полное имя">
         </div>
-        <div class="shop_content">
-            <div class="shop_cards">
-                <div class="shop_card">
-                    <div class="shop_card_image">
-                        <img class="shop_card_img" src="../image/pet/панкейки.png" alt="">
-                    </div>
-                    <div class="shop_card_name">
-                        <p>Панкейки с кленовым сиропом</p>
-                    </div>
-                </div>
-                <div class="shop_card">
-                    <div class="shop_card_image">
-                        <img class="shop_card_img" src="../image/pet/панкейки.png" alt="">
-                    </div>
-                    <div class="shop_card_name">
-                        <p>Панкейки с кленовым сиропом</p>
-                    </div>
-                </div>
-                <div class="shop_card">
-                    <div class="shop_card_image">
-                        <img class="shop_card_img" src="../image/pet/панкейки.png" alt="">
-                    </div>
-                    <div class="shop_card_name">
-                        <p>Панкейки с кленовым сиропом</p>
-                    </div>
-                </div>
-                <div class="shop_card">
-                    <div class="shop_card_image">
-                        <img class="shop_card_img" src="../image/pet/панкейки.png" alt="">
-                    </div>
-                    <div class="shop_card_name">
-                        <p>Панкейки с кленовым сиропом</p>
-                    </div>
-                </div>
+
+        <div class="form-group">
+            <label>Номер карты</label>
+            <input type="text" class="card-number" placeholder="1234 1234 1234 1234" maxlength="19">
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div>
+                <label>Дата истечения срока действия</label>
+                <input type="text" placeholder="ММ / ГГ">
+            </div>
+            <div>
+                <label>Код безопасности</label>
+                <input type="text" placeholder="CVC">
             </div>
         </div>
-    </section>
 
+        <div class="form-group">
+            <label>Страна</label>
+            <select class="country-select">
+                <option>Российская Федерация</option>
+                <option>Другая страна</option>
+            </select>
+        </div>
+
+        <hr>
+
+        <div class="plan">
+            <div class="plan-title">Ваш план</div>
+            <div>Premium-подписка на 1 месяц</div>
+            <div class="plan-price">399.98 ₽</div>
+            <div>Вы можете увидеть дату окончания подписки в любое время в настройках. Пожалуйста, отправьте электронное
+                письмо на rockysacademy@gmail.com с любыми вопросами.</div>
+        </div>
+
+        <div class="total">Сегодняшний итог: 399.98 ₽</div>
+
+        <div class="benefits">
+            <ul>
+                <li>Неограничено количество жизней</li>
+                <li>Задания на аудирование</li>
+                <li>Чат бот для общения</li>
+                <li>Больше материалов для питомца</li>
+            </ul>
+        </div>
+
+        <button class="btn">Оформить</button>
+        <button class="btn btn-secondary">Сохранить карту</button>
+
+        <div class="terms">
+            Нажимая кнопку «Оформить», вы соглашаетесь с Условиями пользования и Политикой обработки персональных
+            данных. Нажимая на кнопку «Сохранить карту», вы соглашаетесь с Условиями привязки и использования карты.
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer_image">
             <img class="footer_img" src="../image/деревья footer.png" alt="">

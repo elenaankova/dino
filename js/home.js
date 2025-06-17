@@ -1,4 +1,114 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const buttonsContainer = document.querySelector('.levels_buttons');
+  let isDragging = false;
+  let startX = 0;
+  let scrollLeft = 0;
+  
+  // Функция для обработки touch-событий
+  function setupTouchSlider() {
+    if (window.innerWidth >= 800) return;
+    
+    buttonsContainer.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.pageX - buttonsContainer.offsetLeft;
+      scrollLeft = buttonsContainer.scrollLeft;
+      buttonsContainer.style.cursor = 'grabbing';
+      buttonsContainer.style.scrollBehavior = 'auto';
+    });
+    
+    buttonsContainer.addEventListener('mouseleave', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      buttonsContainer.style.cursor = 'grab';
+    });
+    
+    buttonsContainer.addEventListener('mouseup', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      buttonsContainer.style.cursor = 'grab';
+      snapToButton();
+    });
+    
+    buttonsContainer.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - buttonsContainer.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      buttonsContainer.scrollLeft = scrollLeft - walk;
+    });
+    
+    // Touch события
+    buttonsContainer.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      startX = e.touches[0].pageX - buttonsContainer.offsetLeft;
+      scrollLeft = buttonsContainer.scrollLeft;
+      buttonsContainer.style.scrollBehavior = 'auto';
+    }, { passive: false });
+    
+    buttonsContainer.addEventListener('touchend', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      snapToButton();
+    }, { passive: false });
+    
+    buttonsContainer.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.touches[0].pageX - buttonsContainer.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      buttonsContainer.scrollLeft = scrollLeft - walk;
+    }, { passive: false });
+    
+    buttonsContainer.style.cursor = 'grab';
+  }
+  
+  // Функция для привязки к ближайшей кнопке после скролла
+  function snapToButton() {
+    buttonsContainer.style.scrollBehavior = 'smooth';
+    const children = Array.from(buttonsContainer.children);
+    const containerRect = buttonsContainer.getBoundingClientRect();
+    
+    let closestButton = null;
+    let minDistance = Infinity;
+    
+    children.forEach(button => {
+      const buttonRect = button.getBoundingClientRect();
+      const distance = Math.abs(buttonRect.left - containerRect.left);
+      
+      if (distance < minDistance) {
+        minDistance = distance;
+        closestButton = button;
+      }
+    });
+    
+    if (closestButton) {
+      buttonsContainer.scrollTo({
+        left: closestButton.offsetLeft - buttonsContainer.offsetLeft,
+        behavior: 'smooth'
+      });
+    }
+  }
+  
+  // Инициализация при загрузке
+  setupTouchSlider();
+  
+  // Реинициализация при изменении размера окна
+  window.addEventListener('resize', function() {
+    if (window.innerWidth < 800) {
+      setupTouchSlider();
+    } else {
+      // Возвращаем стандартное поведение на больших экранах
+      buttonsContainer.style.cursor = '';
+      buttonsContainer.style.scrollBehavior = '';
+    }
+  });
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
   const buttons = document.querySelectorAll('.levels_btn');
   const infoContainer = document.querySelector('.levels_info');
   
@@ -90,4 +200,39 @@ document.addEventListener('DOMContentLoaded', function() {
   if (activeButton) {
     updateLevelInfo(activeButton.textContent);
   }
+});
+
+
+
+
+
+// Функция для проверки размера экрана и изменения класса
+function updateHeaderClass() {
+  const headerElement = document.querySelector('.header_content2, .header_content');
+  
+  if (!headerElement) return; // Защита от отсутствия элемента
+  
+  if (window.innerWidth < 700) {
+    // Если экран меньше 700px
+    if (headerElement.classList.contains('header_content2')) {
+      headerElement.classList.replace('header_content2', 'header_content');
+    }
+  } else {
+    // Если экран больше или равен 700px
+    if (headerElement.classList.contains('header_content')) {
+      headerElement.classList.replace('header_content', 'header_content2');
+    }
+  }
+}
+
+// Запускаем функцию при загрузке страницы
+document.addEventListener('DOMContentLoaded', function() {
+  updateHeaderClass();
+  
+  // Оптимизация: добавляем задержку для resize-событий
+  let resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(updateHeaderClass, 100);
+  });
 });
