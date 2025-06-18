@@ -53,69 +53,106 @@
     </section>
 
 
-    <section>
-        <h1>Кредитная или дебитовая карта</h1>
+    <section class="payment">
+        <h1 class="payment_title">Начните свою подписку</br>Premium без риска</h1>
+        <p class="payment_podtitle">14-дневная гарантия возврата денег.</p>
+        <div class="payment_content">
+            <div class="credit_card">
+                <div class="credit_card_title">
+                    <h1 class="card_title">Кредитная или дебитовая карта</h1>
+                    <div class="card_image">
+                        <img class="card_img" src="../image/premium/мир.png" alt="">
+                        <img class="card_img" src="../image/premium/виза.png" alt="">
+                        <img class="card_img" src="../image/premium/мастерКарта.png" alt="">
+                    </div>
+                </div>
+                <hr>
 
-        <div class="form-group">
-            <h2>Полное имя (как указано на вашей карте)</h2>
-            <input type="text" placeholder="Введите свое полное имя">
-        </div>
+                <div class="form-group">
+                    <p class="form-group-name">Полное имя (как указано на вашей карте)</p>
+                    <input type="text" placeholder="Введите свое полное имя">
+                </div>
 
-        <div class="form-group">
-            <label>Номер карты</label>
-            <input type="text" class="card-number" placeholder="1234 1234 1234 1234" maxlength="19">
-        </div>
+                <div class="form-group">
+                    <label class="form-group-name">Номер карты</label>
+                    <input type="text" class="card-number" placeholder="1234 1234 1234 1234" maxlength="19">
+                </div>
 
-        <hr>
+                <div class="row">
+                    <div>
+                        <label class="form-group-name">Дата истечения срока действия</label>
+                        <input class="label_mini" type="text" placeholder="ММ / ГГ">
+                    </div>
+                    <div>
+                        <label class="form-group-name">Код безопасности</label>
+                        <input class="label_mini" type="text" placeholder="CVC">
+                    </div>
+                </div>
 
-        <div class="row">
-            <div>
-                <label>Дата истечения срока действия</label>
-                <input type="text" placeholder="ММ / ГГ">
+                <div class="form-group">
+                    <label class="form-group-name">Страна</label>
+                    <select class="country-select">
+                        <option>Российская Федерация</option>
+                        <option>Другая страна</option>
+                    </select>
+                </div>
+
+                <div class="terms">
+                    Нажимая кнопку «Оформить», вы соглашаетесь с <a href="politika.html">Условиями пользования и Политикой обработки
+                    персональных
+                    данных.</a>
+                </div>
+                <button class="btn">Оформить Premium подписку</button>
             </div>
-            <div>
-                <label>Код безопасности</label>
-                <input type="text" placeholder="CVC">
+
+            <div class="your_plan">
+                <h1 class="card_title">Кредитная или дебитовая карта</h1>
+                <div class="plan">
+                    <div class="plan-price">
+                        <p>Premium-подписка на 1 месяц</p>
+                        <p>399.98 ₽</p>
+                    </div>
+                    <hr>
+                    <div>Вы можете увидеть дату окончания подписки в любое время в настройках. Пожалуйста, отправьте
+                        электронное
+                        письмо на rockysacademy@gmail.com с любыми вопросами.</div>
+                    <hr>
+                    <div class="total">
+                        <p>Сегодняшний итог:</p>
+                        <p>399.98 ₽</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="benefits">
+                    <ul>
+                        <li>
+                            <div class="li_image">
+                                <img class="li_img" src="../image/premium/сердечко.svg" alt="">
+                            </div>Неограничено количество жизней
+                        </li>
+                        <li>
+                            <div class="li_image">
+                                <img class="li_img" src="../image/premium/динамик.svg" alt="">
+                            </div>Задания на аудирование
+                        </li>
+                        <li>
+                            <div class="li_image">
+                                <img class="li_img" src="../image/premium/переписка.svg" alt="">
+                            </div>Чат бот для общения
+                        </li>
+                        <li>
+                            <div class="li_image">
+                                <img class="li_img" src="../image/premium/тарелка.svg" alt="">
+                            </div>Больше материалов для питомца
+                        </li>
+                    </ul>
+                </div>
+
+
             </div>
-        </div>
-
-        <div class="form-group">
-            <label>Страна</label>
-            <select class="country-select">
-                <option>Российская Федерация</option>
-                <option>Другая страна</option>
-            </select>
-        </div>
-
-        <hr>
-
-        <div class="plan">
-            <div class="plan-title">Ваш план</div>
-            <div>Premium-подписка на 1 месяц</div>
-            <div class="plan-price">399.98 ₽</div>
-            <div>Вы можете увидеть дату окончания подписки в любое время в настройках. Пожалуйста, отправьте электронное
-                письмо на rockysacademy@gmail.com с любыми вопросами.</div>
-        </div>
-
-        <div class="total">Сегодняшний итог: 399.98 ₽</div>
-
-        <div class="benefits">
-            <ul>
-                <li>Неограничено количество жизней</li>
-                <li>Задания на аудирование</li>
-                <li>Чат бот для общения</li>
-                <li>Больше материалов для питомца</li>
-            </ul>
-        </div>
-
-        <button class="btn">Оформить</button>
-        <button class="btn btn-secondary">Сохранить карту</button>
-
-        <div class="terms">
-            Нажимая кнопку «Оформить», вы соглашаетесь с Условиями пользования и Политикой обработки персональных
-            данных. Нажимая на кнопку «Сохранить карту», вы соглашаетесь с Условиями привязки и использования карты.
         </div>
     </section>
+
     <footer class="footer">
         <div class="footer_image">
             <img class="footer_img" src="../image/деревья footer.png" alt="">

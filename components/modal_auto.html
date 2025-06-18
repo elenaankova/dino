@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Авторизация</title>
+</head>
+
+<body>
+    <div id="authModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-conteiner-dino">
+                <img class="dino-img" src="../image/дино_веселый.png" alt="">
+            </div>
+            <div class="modal-conteiner-form">
+                <a href="../html/home.html" class="close-modal">Вернуться</a>
+                <div class="reg-auto">
+                    <a class="akk active">Зарегистрироваться</a>
+                    <a class="akk" href="modal_reg.php">Войти</a>
+                </div>
+
+                <form class="modal_form" action="../connect/auto.php" method="POST">
+                    <h1 class="title">С возвращением!</h1>
+                    <input class="input" type="email" placeholder="Почта" name="email">
+                    <input class="input" type="password" placeholder="Пароль" name="password">
+                    <button class="btn">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // Локальный скрипт для модального окна
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('authModal');
+        const closeBtn = document.querySelector('.close-modal');
+        
+        closeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    });
+    </script>
+</html>

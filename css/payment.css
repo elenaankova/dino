@@ -76,15 +76,67 @@ input[type='checkbox'] {
 /*               section crumbs             */
 
 
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+/*               section payment             */
+.payment{
+    width: 1440px;
+    margin: 150px auto;
+}
+.payment_title{
+    font-size: 4.0vw;
+  font-weight: normal;
+  font-family: "Brusnika";
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.payment_podtitle{
+    font-size: 22px;
+  margin: 0 0 60px 0;
+  text-align: center;
 }
 
-h2 {
-    font-size: 20px;
+.payment_content{
+    max-width: 1198px;
+    align-items: start;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+}
+.credit_card{
+    background-color: var(--bg-color-one);
+    padding: 16px 16px 50px 16px;
+    border: none;
+    min-width: 560px;
+    width: 100%;
+}
+.credit_card_title{
+    display: flex;
+    gap: 10px;
+    margin: 0 0 20px 0;
+
+}
+.card_title {
+    font-size: 24px;
+    margin: 0;
+    font-weight: normal;
+}
+.card_image {
+    display: flex;
+    gap: 10px; 
+    align-items: center; 
+    height: 50px;
+}
+
+.card_img {
+    width: 70px;
+    height: auto; 
+    object-fit: contain; 
+}
+
+.form-group-name {
+    font-size: 18px;
     margin: 25px 0 15px 0;
+    font-weight: normal;
 }
 
 .form-group {
@@ -94,50 +146,79 @@ h2 {
 label {
     display: block;
     margin-bottom: 8px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 input {
-    width: 100%;
+    width: 555px;
     padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
+    font-size: 20px;
     box-sizing: border-box;
+    border: none !important;
 }
-
+.label_mini{
+    max-width: 250px;
+    padding: 12px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: none !important;
+}
 .card-number {
     letter-spacing: 2px;
 }
-
 .row {
     display: flex;
     gap: 15px;
 }
-
 .row>div {
     flex: 1;
 }
-
 .country-select {
-    width: 100%;
+    max-width: 250px;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
 }
-
 hr {
     border: none;
-    border-top: 1px solid #eee;
-    margin: 30px 0;
+    border-top: 2px solid var(--text-color);
+    margin: 15px 0;
+}
+.btn {
+    background-color: var(--button-bg);
+    color: var(--fon);
+    border: none;
+    padding: 14px 20px;
+    font-size: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 555px;
+    margin-top: 10px;
+}
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+}
+.terms {
+    font-size: 12px;
+    color: #535353;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+.terms a{
+    text-decoration: underline;
 }
 
+.your_plan{
+     background-color: var(--bg-color-one);
+    padding: 16px 16px 50px 16px;
+    border: none;
+    max-width: 589px;
+}
 .plan {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
+ 
     margin-bottom: 20px;
 }
 
@@ -148,15 +229,19 @@ hr {
 }
 
 .plan-price {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: normal;
     margin: 10px 0;
+    display: flex;
+    gap: 20px;
 }
 
 .total {
     font-size: 20px;
-    font-weight: bold;
-    margin: 25px 0;
+    font-weight: normal;
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
 }
 
 .benefits {
@@ -170,33 +255,190 @@ hr {
     padding-left: 25px;
 }
 
-.benefits li:before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #4CAF50;
+ li {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+ }
+.li_image{
+    max-width: 80px;
 }
-
-.btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 14px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
+.li_img{
     width: 100%;
-    margin-top: 10px;
+    height: auto;
+    display: block;
 }
 
-.btn-secondary {
-    background-color: #f0f0f0;
-    color: #333;
+
+
+/*        адаптив        */
+@media (max-width: 1400px) {
+.payment_content {
+    margin: 0 ;
+}
 }
 
+
+@media (max-width: 1300px) {
+.your_plan {
+    max-width: 500px;
+}
+.credit_card {
+    max-width: 500px;
+}
+}
+
+
+@media (max-width: 1200px) {
+    .payment {
+        width: 100%;
+        margin: 100px auto;
+    }
+    
+    .payment_content {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .credit_card, .your_plan {
+        min-width: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    input, .btn {
+        width: 100%;
+    }
+}
+
+/* Адаптация для экранов до 768px */
+@media (max-width: 768px) {
+    .payment {
+        margin: 80px auto;
+    }
+    
+    .payment_title {
+        font-size: 6.0vw;
+    }
+    
+    .payment_podtitle {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    
+    .card_title {
+        font-size: 20px;
+    }
+    
+    .card_img {
+        width: 50px;
+    }
+    
+    .form-group-name, input, .label_mini, .country-select {
+        font-size: 18px;
+    }
+    
+    .btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    .plan-price, .total {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .li_image {
+        max-width: 60px;
+    }
+}
+
+/* Адаптация для экранов до 480px */
+@media (max-width: 480px) {
+    .payment {
+        margin: 60px auto;
+    }
+    .crumbs {
+    display: none;
+}
+ul {
+    padding: 0;
+}
 .terms {
-    font-size: 12px;
-    color: #777;
-    margin-top: 30px;
-    line-height: 1.5;
+    font-size: 15px;
+}
+    .payment_title {
+                font-size: 7.6vw;
+    }
+    
+    .payment_podtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .credit_card_title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .card_img {
+        width: 40px;
+    }
+    
+    .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .country-select {
+        max-width: 100%;
+    }
+    
+    .plan-price p, .total p {
+        font-size: 18px;
+    }
+    
+    li {
+        align-items: flex-start;
+    }
+    
+    .li_image {
+        max-width: 50px;
+        margin-top: 5px;
+    }
+}
+
+/* Адаптация для экранов до 360px */
+@media (max-width: 360px) {
+    .payment {
+        margin: 40px auto;
+    }
+    
+    .payment_title {
+        font-size: 20px;
+    }
+    
+    .card_title {
+        font-size: 18px;
+    }
+    
+    .card_img {
+        width: 35px;
+    }
+    
+    input, .label_mini, .country-select {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .btn {
+        font-size: 14px;
+    }
+    
+    .terms {
+        font-size: 11px;
+    }
 }

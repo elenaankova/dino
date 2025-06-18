@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Brusnika";
+    src: url("../fonts/Brusnika.otf");
+}
+
+@font-face {
+    font-family: "Rounded Mplus 1c";
+    src: url("../fonts/MPLUSRounded1c-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Rounded Mplus 1c Light";
+    src: url("../fonts/MPLUSRounded1c-Light.ttf");
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
+    background-color: var(--fon);
+    color: var(--text-color);
+    font-family: "Rounded Mplus 1c";
+    position: relative;
+    padding: 0 20px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+hr {
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+input[type='checkbox'] {
+    width: 30px;
+    /* background-color: #B0206B; */
+    border: none;
+}
+
+:root {
+    /* Светлая тема (по умолчанию) */
+    --fon: #FAFFFB;
+    --text-color: #12321A;
+    --button-bg: #6A9929;
+    --button-text: #FAFFFB;
+    --button-bg-active: #A0B297;
+    --border-color-active: #A0B297;
+    --bg-color-one: #D6E2CC;
+    --bg-color-two: #F4EFE2;
+    --bg-color-three: #A0B297;
+
+    /* --header-bg: #fff; */
+    /* --card-bg: #fff; */
+    /* --border-color: #410e28; */
+    /* --chekbox: #EDC6D1; */
+}
+
+
+
+
+
+.container {
+  margin-top: 60px;
+}
+
+.policy_container {
+  margin-bottom: 150px;
+}
+
+.link {
+  font-size: 15px;
+}
+
+.policy_title {
+  margin-top: 100px;
+  font-size: 3.5vw;
+  font-weight: normal;
+  font-family: "Brusnika";
+  
+}
+
+.container_whatData,
+.container_howUse {
+  margin-bottom: 80px;
+}
+
+.container_pounds_title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.privacy-section__title {
+  margin-bottom: 0;
+}
+
+.privacy-section__title {
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.point_1-1,
+.point_1-2,
+.point_1-3 {
+  font-size: 17px;
+}
+
+.privacy-section__description {
+  margin: 0;
+}
+
+
+/* адаптив */
+@media (max-width: 1100px) {
+  .container_pounds_title {
+    font-size: 20px;
+  }
+
+  .point_1-1,
+  .point_1-2,
+  .point_1-3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .link {
+    font-size: 13px;
+  }
+
+  .policy_title {
+    font-size: 5.5vw;
+  }
+
+  .container_pounds_title {
+    font-size: 18px;
+  }
+
+  .point_1-1,
+  .point_1-2,
+  .point_1-3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .policy_title {
+    font-size: 7.2vw;
+    margin-bottom: 30px;
+  }
+
+  .container_pounds_title {
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .point_1-1,
+  .point_1-2,
+  .point_1-3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .link {
+    display: none;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+
+  .policy_title {
+    font-size: 8.2vw;
+  }
+
+  .container_pounds_title {
+    font-size: 17px;
+  }
+
+  .container_howUse p {
+    font-size: 15px;
+  }
+
+  .point_1-1,
+  .point_1-2,
+  .point_1-3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .policy_title {
+    font-size: 8.4vw;
+  }
+
+  .privacy-section__title {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+}
+
+@media (max-width: 420px) {
+  .policy_title {
+    font-size: 8.7vw;
+  }
+
+  .container_pounds_title {
+    font-size: 15px;
+  }
+
+  .container_howUse p {
+    font-size: 14px;
+  }
+
+  .point_1-1,
+  .point_1-2,
+  .point_1-3 {
+    font-size: 12px;
+  }
+}
