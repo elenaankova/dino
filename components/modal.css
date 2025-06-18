@@ -70,7 +70,7 @@ input[type='checkbox'] {
     align-items: center;
     height: 100vh;
     
-    display: none;
+    
             position: fixed;
             top: 0;
             left: 0;
@@ -90,9 +90,11 @@ input[type='checkbox'] {
   }
   .modal-conteiner-dino{
     max-width: 380px;
+    margin: auto;
   }
   .dino-img{
     width: 100%;
+    
   }
 
 
@@ -102,7 +104,7 @@ input[type='checkbox'] {
   }
   .close-modal {
   width: 35px;
-  font-size: 18px;
+  font-size: 28px;
   margin: 0 0 20px 0;
   position: relative;
   cursor: pointer;
@@ -116,6 +118,9 @@ input[type='checkbox'] {
   }
  .akk{
     cursor: pointer;
+ }
+ .akk:hover{
+    text-decoration: underline;
  }
   .akk.active{
     cursor: auto;
@@ -149,9 +154,9 @@ input[type='checkbox'] {
   }
   .approval{
     display: flex;
-    width: 350px;
+    width: 100%;
     gap: 15px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 0 auto;
   }
   .approval_inp {
     display: none; 
@@ -160,7 +165,7 @@ input[type='checkbox'] {
     flex-shrink: 0;
     width: 27px;
     height: 27px;
-    background-color: var(--chekbox); 
+    background-color: var(--bg-color-two); 
     border: 0px; 
     border-radius: 10px;
     display: inline-block;
@@ -200,13 +205,24 @@ input[type='checkbox'] {
 
 
 /*                                адаптив          */
+
+  @media (max-width: 1100px) {
+.modal-conteiner-dino {
+    max-width: 230px;
+    margin: auto;
+}
+.modal-conteiner-form {
+    max-width: 370px;
+}
+  }
+
   @media (max-width: 900px) {
-    .modal-content{   
+    /* .modal-content{   
       max-width: 420px;
       padding: 40px 30px;
-    }
+    } */
     .title{
-      font-size: 3.0vw;
+      font-size: 4.0vw;
     }
     .input{
       max-width: 330px;
@@ -222,29 +238,43 @@ input[type='checkbox'] {
       width: 330px;
       border-radius: 10px;
     }
-    .akk {
-      font-size: 13px;
-    }
+    .reg-auto {
+    display: flex
+;
+    justify-content: space-between;
+    font-size: 17px;
+    margin: 15px auto 40px auto;
+}
+    
   }
 
 @media (max-width: 700px) {
-  .modal-content{   
-    max-width: 390px;
+  .modal-content{
     padding: 30px 25px;
+    margin: 0 20px;
   }
   .title{
     font-size: 3.6vw;
   }
   .input{
     font-size: 14px;
+        width: 90%;
   }
   .custom-checkbox {
     border-radius: 8px;
   }
-  .akk {
-    font-size: 13px;
-  }
+  .approval_text {
+    font-size: 15px;
 }
+}
+
+
+@media (max-width: 630px) {
+    .modal-conteiner-dino {
+        display: none;
+    }
+}
+
 
 @media (max-width: 550px) {
   .modal-content{   
@@ -252,13 +282,17 @@ input[type='checkbox'] {
     padding: 28px 22px;
   }
   .title{
-    font-size: 4.3vw;
+    font-size: 5.6vw;
   }
   .input{
-    max-width: 300px;
-    font-size: 13px;
+    max-width: 330px;
+    height: 40px;
+    font-size: 17px;
     margin-bottom: 35px;
   }
+      .reg-auto {
+        font-size: 20px;
+    }
   .approval {
     width: 300px;
     margin: 0 auto 40px auto;
@@ -279,11 +313,11 @@ input[type='checkbox'] {
     padding: 28px 30px;
   }
   .title{
-    font-size: 5.7vw;
+    font-size: 6.7vw;
   }
   .input{
     max-width: 340px;
-    font-size: 13px;
+    font-size: 17px;
     margin-bottom: 45px;
   }
   .custom-checkbox {
@@ -296,37 +330,13 @@ input[type='checkbox'] {
     margin: 0 auto 40px auto;
   }
   .btn {
-    font-size: 14px;
-    height: 34px;
-    width: 270px;
+    font-size: 17px;
+    height: 38px;
   }
 }
 
 @media (max-width: 400px) {
   .title{
-    font-size: 6.0vw;
+    font-size: 10.0vw;
   }
-  .input{
-    max-width: 300px;
-    font-size: 12px;
-    margin-bottom: 35px;
-  }
-  .custom-checkbox {
-    width: 22px;
-    height: 22px;
-}
-  .approval {
-    width: 300px;
-  }
-  .approval_text {
-    font-size: 9px;
-}
-  .btn {
-    font-size: 12px;
-    height: 32px;
-    width: 240px;
-  }
-  .akk {
-    font-size: 11px;
-}
 }

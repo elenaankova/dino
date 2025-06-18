@@ -1,0 +1,321 @@
+@font-face {
+  font-family: "Calypso";
+  src: url("../fonts/Calypso.ttf");
+}
+
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf");
+}
+
+html {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+  background-color: #fff8f0;
+  color: #410e28;
+  font-family: "Rounded Mplus 1c";
+  position: relative;
+  padding: 0 20px;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+td,
+th {
+  padding-left: 20px;
+}
+td{
+    height: 40px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+}
+
+/*           sidebar         */
+.sidebar {
+  background-color: #edc6d1;
+  max-width: 290px;
+  padding: 25px 50px;
+  height: 100vh;
+}
+.header_logo {
+  max-width: 100px;
+  justify-content: center;
+  text-align: center;
+}
+.header_logo_img {
+  width: 100%;
+}
+.sidebar_nav {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.sidebar_nav_link {
+  font-size: 18px;
+  margin: 0;
+}
+.reviews {
+  text-decoration-line: underline;
+}
+/*           sidebar         */
+
+/*           contant  (он содержит div search и container_users)       */
+.contant {
+  width: 100%;
+}
+
+/*               div search             */
+.search {
+  background-color: #edc6d1;
+  display: flex;
+  gap: 40px;
+
+  padding: 15px 30px;
+}
+.find {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.search_inp {
+  flex: 1 1 200px;
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--bg-color);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 18px;
+  color: #410e28;
+}
+.search_inp:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+.search_btn {
+  flex: 0 0 auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Rounded Mplus 1c";
+  height: 35px;
+  width: 100%;
+  max-width: 180px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  color: #410e28;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.search_btn:hover {
+  background-color: #c17099;
+}
+/*               div search             */
+
+/*               container_users             */
+
+.container_review {
+  margin: 80px 30px auto 30px;
+}
+.container_reviews_info {
+  display: flex;
+  max-width: 1000px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.container_title {
+  margin: 0;
+  font-size: 30px;
+}
+.review {
+  display: flex;
+  gap: 30px;
+}
+.review p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.table_users {
+  width: 100%;
+  border-spacing: 0px;
+}
+.table_row_titles {
+  width: 100%;
+  height: 40px;
+  background-color: #d587af;
+}
+.table_row_title {
+  text-align: left;
+}
+
+.table_row {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+}
+
+.truncate {
+    max-width: 200px;         /* задаёт максимальную ширину ячейки */
+    white-space: nowrap;      /* не переносить текст на новую строку */
+    overflow: hidden;         /* скрывать выходящий за рамки текст */
+    text-overflow: ellipsis;  /* показывать многоточие в конце */
+  }
+  .table_users {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table_row_titles {
+    background-color: #d587af;
+}
+
+.table_row {
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.table_row:hover {
+    background-color: #f5f5f5;
+}
+
+.table_row.expanded {
+    background-color: #f9f9f9;
+}
+
+td, th {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+/* Стили для текста отзыва */
+.review-text {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.table_row.expanded .review-text {
+    white-space: normal;
+    max-width: 500px;
+}
+
+.select_status{
+    background-color: #edc6d1;
+}
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border:none;
+    background-color: #edc6d1;
+    cursor: pointer;
+}
+/*               container_users             */
+
+
+
+
+
+
+
+.modal_overlay{
+  background-color: #FFF8F0;
+  width: 420px;
+  height: 390px;
+  top: 30%;
+  left: 35%;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border: 3px solid #edc6d1;
+}
+.content{
+  padding: 20px 25px;
+  justify-content: center;
+  text-align: center;
+}
+.modal_title{
+  margin: 0;
+  font-size: 22px;
+}
+.content p{
+  font-size: 20px;
+}
+.item {
+  max-width: 240px;
+  margin: 0 auto 10px;
+  height: 35px;
+  background-color: #edc6d1;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+label{
+  text-align: center;
+  margin: 0 auto;
+}
+/* Скрываем оригинальный input */
+input[type="radio"] {
+  display: none;
+}
+
+/* Стиль для выбранного элемента */
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: #410e28;
+}
+
+/* Изменение фона при выборе */
+input[type="radio"]:checked ~ .item {
+  background-color: #c17099;
+
+}
+
+
+.modal_buttons{
+  margin: 40px auto 10px auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.modal_btn{
+  padding: 5px 50px;
+  background-color: #d587af;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.answer{
+  display: none;
+}
+/*           contant         */

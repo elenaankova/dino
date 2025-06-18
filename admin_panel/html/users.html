@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/users.css">
+    <title>Пользователи</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="sidebar">
+            <a class="header_logo">
+                <img src="../../image/лого footer.svg" class="header_logo_img">
+            </a>
+
+            <div class="sidebar_nav">
+                <a href="../../html/home.html" class="sidebar_nav_link">Выйти</a>
+                <a href="users.php" class="sidebar_nav_link users">Пользователи</a>
+                <a href="reviews.php" class="sidebar_nav_link reviews">Отзывы</a>
+                <a href="recipes.php" class="sidebar_nav_link">Рецепты</a>
+                <a href="blog.php" class="sidebar_nav_link">Блоги</a>
+            </div>
+        </section>
+
+
+
+        <section class="contant">
+            <section class="search">
+                <div class="find">
+                    <input class="search_inp" type="text" placeholder="Поиск..">
+                    <button class="search_btn">Поиск</button>
+                </div>
+
+            </section>
+
+
+            <section class="container_users">
+                <div class="container_users_info">
+                    <h1 class="container_title">Пользователи</h1>
+                    <div class="people">
+                        <p class="all_people">Всего пользователей: 5 435</p>
+                        <p class="for_month_people">Кол-во зарег-шихся за последний месяц: 344</p>
+                    </div>
+                </div>
+
+
+
+                <table class="table_users">
+                    <tr class="table_row_titles">
+                        <th class="table_row_title">№</th>
+                        <th class="table_row_title">Имя</th>
+                        <th class="table_row_title">Время изучения</th>
+                    </tr>
+
+                   
+                        <tr class="table_row">
+                            <td class="table_cell">1</td>
+                            <td class="table_cell name_user">Александр</td>
+                            <td class="table_cell">34 мин</td>
+                        </tr>
+
+                        <tr class="table_row">
+                            <td class="table_cell">2</td>
+                            <td class="table_cell name_user">Александр</td>
+                            <td class="table_cell">3 ч. 45 мин</td>
+                        </tr>
+                    
+                </table>
+
+
+                <!-- <table class="table_users">
+                    <tr class="table_row_titles">
+                        <th class="table_row_title">№</th>
+                        <th class="table_row_title">Имя</th>
+                        <th class="table_row_title">Кол-во сохранненых рецептов</th>
+                    </tr>
+
+
+                    <?php while ($row = mysqli_fetch_assoc($result)): ?>
+                        <tr class="table_row">
+                            <td><?= $row['row_num'] ?></td>
+                            <td class="name_user"><?= $row['name'] ?></td>
+                            <td><?= $row['numder_recipes'] ?></td> 
+                        </tr>
+                    <?php endwhile; ?>
+
+                </table> -->
+
+
+            </section>
+        </section>
+    </div>
+</body>
+
+
+</html>

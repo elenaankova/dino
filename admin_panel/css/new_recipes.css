@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "Calypso";
+    src: url("../fonts/Calypso.ttf");
+  }
+  
+  @font-face {
+    font-family: "Rounded Mplus 1c";
+    src: url("../fonts/MPLUSRounded1c-Regular.ttf");
+  }
+  
+  html {
+    overflow-x: hidden;
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
+    background-color: #fff8f0;
+    color: #410e28;
+    font-family: "Rounded Mplus 1c";
+    position: relative;
+    padding: 0 20px;
+  }
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  td,
+  th {
+    padding-left: 20px;
+  }
+  td{
+      height: 40px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /*           sidebar         */
+  .sidebar {
+    background-color: #edc6d1;
+    max-width: 290px;
+    padding: 25px 50px;
+    min-height: 100vh;
+  }
+  .header_logo {
+    max-width: 100px;
+    justify-content: center;
+    text-align: center;
+  }
+  .header_logo_img {
+    width: 100%;
+  }
+  .sidebar_nav {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  .sidebar_nav_link {
+    font-size: 18px;
+    margin: 0;
+  }
+
+.nav_btn{
+    margin-top: 60px;
+    background-color: #f5f5f5;
+    padding: 2px 5px;
+    font-size: 15px;
+    width: 120px;
+}
+
+
+  /*           sidebar         */
+  
+  /*           contant  (он содержит div search и container_users)       */
+  .contant {
+    width: 100%;
+  }
+  
+  /*               div search             */
+  .search {
+    background-color: #edc6d1;
+    display: flex;
+    gap: 40px;
+  
+    padding: 15px 30px;
+  }
+  .find {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  .search_inp {
+    flex: 1 1 200px;
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--bg-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 18px;
+    color: #410e28;
+  }
+  .search_inp:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+  }
+  .search_btn {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: "Rounded Mplus 1c";
+    height: 35px;
+    width: 100%;
+    max-width: 180px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    color: #410e28;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .search_btn:hover {
+    background-color: #c17099;
+}
+
+  /*               div search             */
+  
+  /*               container_users             */
+  
+  .container_review {
+    margin: 80px 30px auto 30px;
+  }
+  .container_reviews_info {
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .container_title {
+    margin: 0;
+    font-size: 30px;
+  }
+  .manual{
+    display: flex;
+    
+  }
+.manual_p{
+  margin: 0;
+}
+.fixed-text {
+  user-select: none;       /* Запрещает выделение текста */
+  pointer-events: none;   /* Блокирует клики */
+  display: inline-block;  /* Сохраняет оригинальное поведение span */
+}
+
+.table_users{
+    width: 1000px;
+    border-spacing: 0 15px;
+    margin-bottom: 100px;
+}
+
+th{
+width: 100px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Rounded Mplus 1c";
+}
+.table_column_1{
+    width: 100px;
+}
+  
+.container_review_buttons{
+  display: flex;
+  margin: 0 0 100px 20px;
+  gap: 40px;
+}
+.btn{
+  padding: 5px 50px;
+  background-color: #D587AF;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Rounded Mplus 1c";
+  cursor: pointer;
+}
+
+.table_inp{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.table_inp{
+  width: 400px;
+}
+
+  /*               container_users             */
+  
+  
+  
+  /*           contant         */
+  

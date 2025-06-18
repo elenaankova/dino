@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <div id="authModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-conteiner-dino">
+                <img class="dino-img" src="../image/дино.png" alt="">
+            </div>
+            <div class="modal-conteiner-form">
+                <a href="../html/home.html" class="close-modal">Вернуться</a>
+                <div class="reg-auto">
+                    <a class="akk active" >Зарегистрироваться</a>
+                    <a class="akk " href="modal_auto.html">Войти</a>
+                </div>
+
+                <form class="modal_form" action="../connect/auto.php" method="POST">
+                    <h1 class="title">Заполните форму, чтобы начать обучение языков с нами</h1>
+                    <input class="input" type="text" placeholder="Имя" name="email">
+                    <input class="input" type="email" placeholder="Почта" name="email">
+                    <input class="input" type="password" placeholder="Пароль" name="password">
+                    <input class="input" type="password" placeholder="Повторите пароль" name="password">
+                    <div class="approval">
+                    <input type="checkbox" class="wr-checkbox20" id="wr20" name="wr" required>
+                    <label for="wr20"></label>
+                    <p class="approval_text">Нажимая на кнопку, вы даете согласие на обработку
+                        персональных данных и
+                        соглашаетесь <a href="../html/politika.html" style="text-decoration-line: underline;">c политикой конфиденциальности.</a></p>
+                </div>
+                    <button class="btn">Присоединиться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
