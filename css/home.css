@@ -1302,8 +1302,7 @@ gap: 30px;
   display: none;
 }
 .banner_dino {
-  margin-top: 90px;
-  right: -3%;
+  display: none;
 }
 .banner_image {
 max-width: 460px;
@@ -1569,6 +1568,10 @@ gap: 20px;
 
 
 @media (max-width: 400px) {
+.banner_content_text {
+  font-size: 5.5vw;
+}
+
 /*  premium  */
 .premium_content {
   gap: 15px;

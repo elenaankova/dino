@@ -303,8 +303,163 @@ width: 100%;
 
 
 
+/*              адаптив            */
+@media (max-width: 1400px) {
+/*  header  */
+.header_content2 {
+  gap: 120px;
+}
+.banner {
+  height: 740px;
+}
+/*  header  */
+
+/*  banner  */
+.banner_image {
+  max-width: 720px;
+}
+.banner_flower {
+  width: 470px;
+}
+.banner_leaves {
+  max-width: 550px;
+  top: 50%;
+}
+/*  banner  */
+}
+
+
+
+
+@media (max-width: 1300px) {
+  /*  header  */
+.header_content2 {
+  gap: 120px;
+}
+/*  header  */
+
+/*  banner  */
+.banner_image {
+  max-width: 680px;
+}
+.banner_flower {
+  width: 440px;
+}
+.banner_leaves {
+  max-width: 510px;
+  top: 51%;
+}
+.banner_content {
+  top: 240px;
+  max-width: 550px;
+}
+.banner_content_text {
+  font-size: 2.6vw;
+  margin: 0 0 10px 0;
+}
+.banner_content_tagline {
+  font-size: 18px;
+  margin: 0 0 80px 0;
+}
+.banner_content_btn {
+  width: 230px;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+/*  banner  */
+}
+
+
+
+@media (max-width: 1200px) {
+/*  banner  */
+.banner_image {
+  max-width: 650px;
+}
+.banner_flower {
+  width: 420px;
+}
+.banner_leaves {
+  max-width: 480px;
+  top: 52%;
+}
+.banner_content {
+  max-width: 480px;
+}
+.banner_content_btn {
+  height: 32px;
+  font-size: 16px;
+}
+/*  banner  */
+}
+
+
+
+
+@media (max-width: 1100px) {
+/*  header  */
+.header_content2 {
+  gap: 100px;
+}
+/*  header  */
+
+/*  banner  */
+.banner_image {
+  max-width: 610px;
+}
+.banner_flower {
+  width: 400px;
+}
+.banner_leaves {
+  max-width: 450px;
+  top: 52%;
+}
+.banner_content {
+  max-width: 410px;
+}
+/*  banner  */
+}
+
 
 @media (max-width: 1000px){
+/*  header  */
+.header_content2 {
+  gap: 50px;
+}
+/*  header  */
+
+/*  banner  */
+.banner {
+  height: 620px;
+}
+.banner_image {
+  max-width: 570px;
+}
+.banner_flower {
+  width: 370px;
+}
+.banner_leaves {
+  max-width: 410px;
+  top: 54%;
+}
+.banner_content {
+  top: 220px;
+  max-width: 360px;
+}
+.banner_content_text {
+  font-size: 2.9vw;
+}
+.banner_content_tagline {
+  font-size: 16px;
+  margin: 0 0 70px 0;
+}
+.banner_content_btn {
+  height: 30px;
+  width: 210px;
+}
+/*  banner  */
+
 .how_it_works_box_title {
     font-size: 16px;
     font-weight: 700;
@@ -338,7 +493,60 @@ width: 100%;
 }
 
 
+@media (max-width: 900px){
+/*  header  */
+.header_content2 {
+  gap: 40px;
+}
+/*  header  */
+
+/*  banner  */
+.banner {
+  height: 590px;
+}
+.banner_image {
+  max-width: 500px;
+}
+.banner_flower {
+  width: 340px;
+}
+.banner_leaves {
+  max-width: 390px;
+  top: 54%;
+}
+}
+
 @media (max-width: 800px){
+
+/*  banner  */
+.banner_image {
+  max-width: 450px;
+}
+.banner_flower {
+  width: 300px;
+}
+.banner_leaves {
+  max-width: 340px;
+  top: 54%;
+}
+.banner_content {
+  top: 180px;
+  max-width: 330px;
+}
+.banner_content_text {
+  font-size: 3.7vw;
+}
+.banner_content_tagline {
+  font-size: 17px;
+  margin: 0 0 50px 0;
+}
+.banner_content_btn {
+  height: 40px;
+  width: 270px;
+  font-size: 18px;
+}
+/*  banner  */
+
 .advantages_punkt {
     gap: 10px;
     max-width: 1100px;
@@ -374,7 +582,93 @@ h1 {
 }
 
 
+
+@media (max-width: 750px) {
+/*  banner  */
+.banner {
+  height: 470px;
+}
+.banner_image {
+  max-width: 420px;
+}
+.banner_dino {
+  margin-top: 130px;
+  right: 29%;
+}
+.banner_flower {
+  width: 270px;
+}
+.banner_leaves {
+  max-width: 270px;
+  top: 54%;
+}
+.banner_content {
+  top: 160px;
+  max-width: 320px;
+}
+.banner_content_text {
+  font-size: 3.7vw;
+}
+.banner_content_tagline {
+  font-size: 17px;
+  margin: 0 0 50px 0;
+}
+.banner_content_btn {
+  height: 40px;
+  width: 270px;
+  font-size: 18px;
+}
+/*  banner  */
+}
+
+
 @media (max-width: 700px){
+/*  header  */
+.header_content2 {
+  gap: 200px;
+}
+/*  header  */
+
+/*  banner  */
+.banner_flower {
+  display: none;
+}
+.banner_leaves {
+  display: none;
+}
+.banner_dino {
+  margin-top: 90px;
+  right: -3%;
+}
+.banner_content_tagline_pr {
+    font-size: 6.2vw;
+    font-family: "Brusnika";
+    font-weight: 100;
+    margin: 0 0 100px 100px;
+}
+.banner_image {
+max-width: 460px;
+}
+.banner_content {
+  top: 120px;
+  max-width: 350px;
+}
+.banner_content_text {
+  font-size: 4.5vw;
+}
+.banner_content_tagline {
+  font-size: 18px;
+  margin: 0 0 50px 0;
+}
+.banner_content_btn {
+  height: 38px;
+  width: 250px;
+  font-size: 18px;
+}
+/*  banner  */
+
+
+
     .advantages_punkt {
 display: block;
 margin: 0 auto 60px auto;
@@ -385,6 +679,39 @@ margin: 0 auto 60px auto;
         .advantages_punkt_info_text {
         font-size: 16px;
     }
+}
+
+
+
+@media (max-width: 600px) {
+/*  banner  */
+/* .banner_dino {
+  margin-top: 90px;
+  right: -3%;
+} */
+.banner {
+  height: 370px;
+}
+.banner_image {
+max-width: 410px;
+}
+.banner_content {
+  top: 120px;
+  max-width: 287px;
+}
+.banner_content_text {
+  font-size: 3.8vw;
+}
+.banner_content_tagline {
+  font-size: 16px;
+  margin: 0 0 50px 0;
+}
+.banner_content_btn {
+  height: 35px;
+  width: 210px;
+  font-size: 17px;
+}
+/*  banner  */
 }
 
 
@@ -433,6 +760,17 @@ margin: 0 auto 60px auto;
 
 
 @media (max-width: 400px){
+
+    .banner_content_tagline_pr {
+    font-size: 8.2vw;
+    font-family: "Brusnika";
+    font-weight: 100;
+    margin: 0 0 100px 60px;
+}
+.banner_content_text {
+  font-size: 5.5vw;
+}
+
         .advantages_punkt_info_title {
         font-size: 17px;
     }
