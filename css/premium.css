@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "Brusnika";
+  src: url("../fonts/Brusnika.otf");
+}
+
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Rounded Mplus 1c Light";
+  src: url("../fonts/MPLUSRounded1c-Light.ttf");
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+  background-color: var(--fon);
+  color: var(--text-color);
+  font-family: "Rounded Mplus 1c";
+  position: relative;
+  padding: 0 20px;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+input[type='checkbox'] {
+  width: 30px;
+  /* background-color: #B0206B; */
+  border: none;
+}
+h1{
+    font-family: "Brusnika";
+    font-size: 55px;
+    font-weight: 100;
+    text-align: center;
+}
+
+:root {
+  /* Светлая тема (по умолчанию) */
+  --fon: #FAFFFB;
+  --text-color: #12321A;
+  --button-bg: #6A9929;
+  --button-text: #FAFFFB;
+  --button-bg-active: #A0B297;
+  --border-color-active: #A0B297;
+  --bg-color-one: #D6E2CC;
+  --bg-color-two: #F4EFE2;
+  --bg-color-three: #A0B297;
+
+  /* --header-bg: #fff; */
+  /* --card-bg: #fff; */
+  /* --border-color: #410e28; */
+  /* --chekbox: #EDC6D1; */
+}
+
+
+
+
+/*                header             */
+
+.header_content2 {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+/*                banner             */
+.banner {
+  height: 800px;
+}
+
+.banner_content {
+  top: 260px;
+  position: absolute;
+  max-width: 660px;
+  font-family: "Rounded Mplus 1c Light";
+}
+
+.banner_content_text_pr {
+  font-size: 5.2vw;
+  font-family: "Brusnika";
+  font-weight: 100;
+  margin: 0 0 15px 0;
+}
+
+.banner_content_tagline_pr {
+  font-size: 6.2vw;
+  font-family: "Brusnika";
+  font-weight: 100;
+  margin: 0 0 100px 300px;
+}
+
+.banner_content_btn {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  width: 260px;
+  height: 40px;
+  font-size: 20px;
+  font-family: "Rounded Mplus 1c Light";
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.banner_img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+.banner_image{
+  max-width: 780px;
+  position: absolute;
+  top: 0; 
+  right: 0;
+  z-index: 1;
+}
+
+.banner_flower{
+  width: 500px;
+  position: absolute;
+  top: 0; 
+  right: -5%;
+  z-index: 1;
+}
+.banner_dino{
+  position: relative;
+  margin-top: 150px;
+  right: 35%;
+  z-index: 3;
+}
+.banner_leaves{
+  position: absolute;
+  max-width: 600px;
+  top: 50%; 
+  right: -5%;
+    z-index: 10;
+}
+
+.banner_flower_img{
+  width: 100%;
+}
+.banner_dino_img{
+  width: 100%;
+} 
+.banner_leaves_img{
+  width: 100%; 
+}
+
+
+
+
+
+
+.subscribe{
+    max-width: 800px;
+    margin: 100px auto 140px auto;
+}
+.subscribe_container{
+    display: flex;
+    gap: 30px;
+}
+.subscribe_1 {
+    flex: 1; /* Равномерное распределение пространства */
+    min-width: 0; /* Важно для корректной работы flex */
+    padding: 40px 25px;
+    background-color: var(--bg-color-one);
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+.subscribe_1_title{
+    text-align: left;
+}
+.subscribe_1_text, .subscribe_1_proba{
+    margin: 0;
+    font-size: 18px;
+}
+.subscribe_1_price{
+    display: flex;
+    margin: 0;
+}
+.subscribe_1_price_text{
+    font-size: 32px;
+    margin: 0;
+}
+
+.subscribe_1_btn{
+    margin-top: 60px;
+    padding: 5px 40px;
+    background-color: #6A9929;
+    color: #FAFFFB;
+    font-size: 22px;
+    border: none;
+    font-family: "Rounded Mplus 1c Light";
+    border-radius: 15px;
+width: 100%;
+}
+.subscribe_2_btn{
+    margin-top: 35px;
+}
+.subscribe_a{
+    text-decoration-line: underline;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.how_it_works{
+    margin-bottom: 150px;
+}
+.how_it_works_title{
+    margin-bottom: 0;
+}
+.how_it_works_warning{
+    text-align: center;
+}
+
+.how_it_works_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.how_it_works_box{
+    padding: 15px;
+}
+.how_it_works_box_image{
+    display: flex;
+    gap: 10px;
+    
+}
+.how_it_works_box_image_hr{
+    height: 3px;
+    width: 100%;
+    background-color: #12321A;
+    margin: auto 0;
+}
+.how_it_works_box_title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.how_it_works_box_text{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+.advantages{
+    margin-bottom: 100px;
+}
+.advantages_punkt{
+    display: flex;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
+}
+.advantages_punkt_info_title{
+    font-size: 26px;
+    font-weight: 600;
+}
+.advantages_punkt_info{
+    max-width: 500px;
+}
+.advantages_punkt_info_text{
+    font-size: 18px;
+}
+.advantages_punkt_image_img{
+    width: 100%;
+}
